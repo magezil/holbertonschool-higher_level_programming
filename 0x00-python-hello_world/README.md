@@ -11,3 +11,13 @@
 * Shell script that runs Python code
 * `$PYCODE` - environment variable with Python code to run
 * Usage: `./1-run_inline`
+
+### 2-print.py
+* Python script prints `"Programming is like building a multilingual puzzle` followed by a new line
+* Usage: `./2-print.py`
+
+### 3-print_number.py
+* Python script prints integer stored in a variable
+* Usage: `./3-print_number.py
+
+
