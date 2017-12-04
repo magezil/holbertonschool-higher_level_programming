@@ -42,3 +42,14 @@ Holberton`
 * Usage: `./6-concat.py`
 * Output:\
 `Welcome to Holberton School!`
+
+### 7-edges.py
+* Python script that prints the following:
+  * First 3 letters of variable `word`
+  * Last 2 letters of variable `word`
+  * Middle of variable `word` without first nor last letter
+* Usage: `./7-edges.py`
+* Output:\
+`First 3 letters: Hol\
+Last 2 letters: on\
+Middle word: olberto`
