@@ -53,3 +53,9 @@ Holberton`
 `First 3 letters: Hol\
 Last 2 letters: on\
 Middle word: olberto`
+
+### 8-concat_edges.py
+* Python script that prints `object-oriented programming with Python` followed by a new line
+* Usage: `./8-concat_edges.py`
+* Output:\
+`object-oriented programming with Python`
