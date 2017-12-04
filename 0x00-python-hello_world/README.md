@@ -26,14 +26,19 @@
 
 ### 4-print_float.py
 * Python script prints float with 2 only digits stored in a variable
-* Usage: `4-print_float.py`
+* Usage: `./4-print_float.py`
 * Output:\
 `Float: 3.14`
 
 ### 5-print_string.py
 * Python script prints string in variable 3 times followed by the first 9 characters of string
-* Usage: `5-print_string.py`
+* Usage: `./5-print_string.py`
 * Output:\
-`Holberton SchoolHolberton SchoolHolberton School
+`Holberton SchoolHolberton SchoolHolberton School\
 Holberton`
 
+### 6-concat.py
+* Python script concatenates two strings and prints it
+* Usage: `./6-concat.py`
+* Output:\
+`Welcome to Holberton School!`
