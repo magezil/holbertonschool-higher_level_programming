@@ -95,3 +95,9 @@ Namespaces are one honking great idea -- let's do more of those!
 ### 10-check_cycle.c
 * C program checks if a singly linked list has a cycle in it
 * Return: `0` if no cycle, `1` if there is a cycle
+
+### 100-write.py
+* Python script prints `and that piece of art is useful - Dora Korpar, 2015-10-19` to stderr
+* Usage: `./100-write.py`
+* Output:\
+`and that piece of art is useful - Dora Korpar, 2015-10-19`
