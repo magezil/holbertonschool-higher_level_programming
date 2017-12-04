@@ -18,6 +18,8 @@
 
 ### 3-print_number.py
 * Python script prints integer stored in a variable
-* Usage: `./3-print_number.py
+* Usage: `./3-print_number.py`
 
-
+### 4-print_float.py
+* Python script prints float with 2 only digits stored in a variable
+* Usage: `4-print_float.py`
