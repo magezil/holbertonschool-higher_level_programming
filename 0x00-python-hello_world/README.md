@@ -44,7 +44,7 @@ Holberton`
 `Welcome to Holberton School!`
 
 ### 7-edges.py
-* Python script that prints the following:
+* Python script prints the following:
   * First 3 letters of variable `word`
   * Last 2 letters of variable `word`
   * Middle of variable `word` without first nor last letter
@@ -55,7 +55,33 @@ Last 2 letters: on\
 Middle word: olberto`
 
 ### 8-concat_edges.py
-* Python script that prints `object-oriented programming with Python` followed by a new line
+* Python script prints `object-oriented programming with Python` followed by a new line
 * Usage: `./8-concat_edges.py`
 * Output:\
 `object-oriented programming with Python`
+
+### 9-easter_egg.py
+* Python script prints "The Zen of Python" by Tim Peters
+* Usage: `./9-easter_egg.py`
+* Output:\
+`The Zen of Python, by Tim Peters\
+\
+Beautiful is better than ugly.\
+Explicit is better than implicit.\
+Simple is better than complex.\
+Complex is better than complicated.\
+Flat is better than nested.\
+Sparse is better than dense.\
+Readability counts.\
+Special cases aren't special enough to break the rules.\
+Although practicality beats purity.\
+Errors should never pass silently.\
+Unless explicitly silenced.\
+In the face of ambiguity, refuse the temptation to guess.\
+There should be one-- and preferably only one --obvious way to do it.\
+Although that way may not be obvious at first unless you're Dutch.\
+Now is better than never.\
+Although never is often better than *right* now.\
+If the implementation is hard to explain, it's a bad idea.\
+If the implementation is easy to explain, it may be a good idea.\
+Namespaces are one honking great idea -- let's do more of those!`
