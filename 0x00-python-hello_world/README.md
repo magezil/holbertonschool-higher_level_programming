@@ -34,9 +34,8 @@
 * Python script prints string in variable 3 times followed by the first 9 characters of string
 * Usage: `./5-print_string.py`
 * Output:\
-`Holberton SchoolHolberton SchoolHolberton School
-
-Holberton`
+`Holberton SchoolHolberton SchoolHolberton School`
+`Holberton`
 
 ### 6-concat.py
 * Python script concatenates two strings and prints it
@@ -51,9 +50,9 @@ Holberton`
   * Middle of variable `word` without first nor last letter
 * Usage: `./7-edges.py`
 * Output:\
-`First 3 letters: Hol  
-Last 2 letters: on  
-Middle word: olberto`
+`First 3 letters: Hol`
+`Last 2 letters: on`
+`Middle word: olberto`
 
 ### 8-concat_edges.py
 * Python script prints `object-oriented programming with Python` followed by a new line
@@ -65,10 +64,10 @@ Middle word: olberto`
 * Python script prints "The Zen of Python" by Tim Peters
 * Usage: `./9-easter_egg.py`
 * Output:\
-`The Zen of Python, by Tim Peters  
-  
-Beautiful is better than ugly.  
-Explicit is better than implicit.  
+`The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
 Simple is better than complex.
 Complex is better than complicated.
 Flat is better than nested.
