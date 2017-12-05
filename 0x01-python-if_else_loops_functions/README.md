@@ -12,3 +12,11 @@
   * less than 6 and not 0
   * 0
 * Usage: `./1-last_digit.py`
+
+### 2-print_alphabet.py
+* Python script prints the alphabet in lower case
+* Usage: `./2-print_alphabet.py`
+* Output:\
+`abcdefghijklmnopqrstuvwxyz`
+
+
