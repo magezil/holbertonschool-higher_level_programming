@@ -83,3 +83,7 @@ $
 ### 8-uppercase.py
 * Python function prints string in uppercase
 * Prototype: `def uppercase(str):`
+
+### 9-print_last_digit.py
+* Python function prints and returns the last digit
+* Prototype: `def print_last_digit(number):`
