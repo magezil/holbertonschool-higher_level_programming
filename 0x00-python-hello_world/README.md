@@ -105,3 +105,14 @@ Namespaces are one honking great idea -- let's do more of those!
 ### 101-compile
 * Bash script compiles a Python script file stored in environment variable `$PYFILE`
 * Usage: `./101-compile`
+
+### 102-magic_calculation.py
+* Python function that matches the given Python bytecode
+```
+3           0 LOAD_CONST               1 (98)
+              3 LOAD_FAST                0 (a)
+              6 LOAD_FAST                1 (b)
+              9 BINARY_POWER
+             10 BINARY_ADD
+             11 RETURN_VALUE
+```
