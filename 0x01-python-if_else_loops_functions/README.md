@@ -76,6 +76,10 @@ $
 ```
 
 ### 7-islower.py
-* Python function checks for a lower case character
+* Python function checks for a lowercase character
 * Prototype: `def islower(c):`
 * Return: `True` if c is lowercase, `False` otherwise
+
+### 8-uppercase.py
+* Python function prints string in uppercase
+* Prototype: `def uppercase(str):`
