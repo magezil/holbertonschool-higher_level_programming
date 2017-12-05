@@ -101,3 +101,7 @@ Namespaces are one honking great idea -- let's do more of those!
 * Usage: `./100-write.py`
 * Output:\
 `and that piece of art is useful - Dora Korpar, 2015-10-19`
+
+### 101-compile
+* Bash script compiles a Python script file stored in environment variable `$PYFILE`
+* Usage: `./101-compile`
