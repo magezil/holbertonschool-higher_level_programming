@@ -87,3 +87,11 @@ $
 ### 9-print_last_digit.py
 * Python function prints and returns the last digit
 * Prototype: `def print_last_digit(number):`
+
+### 10-add.py
+* Python function returns the sum of two integers
+* Prototype: `def add(a, b):`
+
+### 11-pow.py
+* Python function computes `a` to the power of `b` and returns the value
+* Prototype: `def pow(a, b):`
