@@ -19,4 +19,8 @@
 * Output:\
 `abcdefghijklmnopqrstuvwxyz`
 
-
+### 3-print_alphabt.py
+* Python script that prints the alphabet in lower case except for `e` and `q`
+* Usage: `./3-print_alphabt.py`
+* Output:\
+`abcdfghijklmnoprstuvwxyz`
