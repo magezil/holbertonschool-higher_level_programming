@@ -2,7 +2,7 @@
 def uppercase(str):
     toup = ord('a') - ord('A')
     for c in str:
-        print(chr(ord(c) - toup) if islower(c) else c, end="")
+        print("{}".format(chr(ord(c) - toup) if islower(c) else c), end="")
     print()
 
 
