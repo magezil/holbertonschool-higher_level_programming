@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 def uppercase(str):
     toup = ord('a') - ord('A')
     for c in str:
