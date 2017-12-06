@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for c in "abcdfghijklmnoprstuvwxyz":
-    print(c, end="")
+    print("{}".format(c), end="")
