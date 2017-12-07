@@ -67,3 +67,12 @@ my_secret_santa
 print_holberton
 print_school
 ```
+
+### 5-variable_load.py
+* Program imports the variable `a` from file `variable_load_5.py` and prints its value
+* Usage: `./5-variable_load.py`
+* Sample output: /
+```
+$ ./5-variable_load.py
+98
+```
