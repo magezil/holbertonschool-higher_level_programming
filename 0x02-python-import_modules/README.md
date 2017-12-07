@@ -76,3 +76,11 @@ print_school
 $ ./5-variable_load.py
 98
 ```
+
+### 100-my_calculator.py
+* Program imports functions from `calculator_1.py` and handles basic operations
+  * addition (`+`)
+  * subtraction (`-`)
+  * multiplication (`*`)
+  * division (`/`)
+* Usage: `./100-my_calculator.py a operator b`
