@@ -21,3 +21,23 @@
 10 * 5 = 50
 10 / 5 = 2
 ```
+
+### 2-args.py
+* Program prints the number of and list of arguments
+* Usage: `./2-args.py [args]`
+* Sample output:\
+```
+$ ./2-args.py 
+0 arguments.
+$ ./2-args.py Hello
+1 argument:
+1: Hello
+$ ./2-args.py Hello Holberton School 98 Battery street
+6 arguments:
+1: Hello
+2: Holberton
+3: School
+4: 98
+5: Battery
+6: street
+```
