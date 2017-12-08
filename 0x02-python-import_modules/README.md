@@ -84,3 +84,24 @@ $ ./5-variable_load.py
   * multiplication (`*`)
   * division (`/`)
 * Usage: `./100-my_calculator.py a operator b`
+* Sample output:/
+```
+$ ./100-my_calculator.py
+Usage: ./100-my_calculator.py <a> <operator> <b>
+$ ./100-my_calculator.py 3 + 5
+3 + 5 = 8
+$ ./100-my_calculator.py 3 H 5 ; echo $?
+Unknown operator. Available operators: +, -, * and /
+$
+```
+
+### 101-easy_print.py
+* Program prints `#pythoniscool`
+* Usage: `./101-easy_print.py`
+* Output: `#pythoniscool`
+
+### 102-magic_calculation.py
+* Python function that matches the given Python bytecode
+
+### 103-fast_alphabet.py
+* Program prints the alphabet in uppercase
