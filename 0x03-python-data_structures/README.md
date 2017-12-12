@@ -17,3 +17,7 @@
 ### 3-print_reversed_list_integer.py
 * Function prints all integers in a list in reverse order
 * Prototype: `3-print_reversed_list_integer.py`
+
+### 4-new_in_list.py
+* Function copies an element at a specific position without modifying the original list (like C)
+* Prototype: `def new_in_list(my_list, idx, element):`
