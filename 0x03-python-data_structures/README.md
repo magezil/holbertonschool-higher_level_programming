@@ -61,5 +61,10 @@
 * Return: changed list 
 
 ### 12-switch.py
-* Function switches the values of `a` and `b`
+* Python script switches the values of `a` and `b`
 * Usage: `./12-switch.py`
+
+### 13-is_palindrome.c, lists.h
+* C function that checks if a singly linked list is a palindrome
+* Prototype: `int is_palindrome(listint_t **head);`
+* Return: `0` if it is not a palindrome, `1` if it is
