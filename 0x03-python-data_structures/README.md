@@ -25,3 +25,7 @@
 ### 5-no_c.py
 * Function removes all `C` and `c` characters from a string
 * Prototype: `def no_c(my_string):`
+
+### 6-print_matrix_integer.py
+* Function prints an integer matrix
+* Prototype: `def print_matrix_integer(matrix=[[]]):` 
