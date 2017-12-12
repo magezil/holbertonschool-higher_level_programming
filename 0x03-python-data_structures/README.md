@@ -33,3 +33,7 @@
 ### 7-add_tuple.py
 * Function adds two tuples
 * Prototype: `def add_tuple(tuple_a=(), tuple_b=()):`
+
+### 8-multiple_returns.py
+* Function returns tuple of string (length, first character)
+* Prototype: `def multiple_returns(sentence):`
