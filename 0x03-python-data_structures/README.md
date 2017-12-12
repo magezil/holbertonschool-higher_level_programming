@@ -21,3 +21,7 @@
 ### 4-new_in_list.py
 * Function copies an element at a specific position without modifying the original list (like C)
 * Prototype: `def new_in_list(my_list, idx, element):`
+
+### 5-no_c.py
+* Function removes all `C` and `c` characters from a string
+* Prototype: `def no_c(my_string):`
