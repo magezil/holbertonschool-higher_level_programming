@@ -29,3 +29,7 @@
 ### 6-print_matrix_integer.py
 * Function prints an integer matrix
 * Prototype: `def print_matrix_integer(matrix=[[]]):` 
+
+### 7-add_tuple.py
+* Function adds two tuples
+* Prototype: `def add_tuple(tuple_a=(), tuple_b=()):`
