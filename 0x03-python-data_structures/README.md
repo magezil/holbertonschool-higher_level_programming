@@ -61,3 +61,5 @@
 * Return: changed list 
 
 ### 12-switch.py
+* Function switches the values of `a` and `b`
+* Usage: `./12-switch.py`
