@@ -51,7 +51,13 @@
 * Return: `None` if list is empty, largest number otherwise
 
 ### 10-divisible_by_2.py
+* Function finds all multiples of 2 in a list
+* Prototype: `def divisible_by_2(my_list=[]):`
+* Return: list of `True` or `False` whether element at same position in `my_list` is a multiple of 2
 
 ### 11-delete_at.py
+* Function deletes item at specified index
+* Prototype: `def delete_at(my_list=[], idx=0):`
+* Return: changed list 
 
 ### 12-switch.py
