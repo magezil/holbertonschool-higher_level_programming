@@ -13,3 +13,7 @@
 ### 2-replace_in_list.py
 * Function replaces an element at a specific position (like C)
 * Prototype: `def replace_in_list(my_list, idx, element):`
+
+### 3-print_reversed_list_integer.py
+* Function prints all integers in a list in reverse order
+* Prototype: `3-print_reversed_list_integer.py`
