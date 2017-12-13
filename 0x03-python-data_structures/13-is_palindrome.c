@@ -1,27 +1,6 @@
 #include "lists.h"
 
 /**
- * reverse_list - reverses a singly linked list
- * @head: head of listint_t linked list
- *
- * Return: head of reversed listint_t linked list
- */
-listint_t *reverse_list(listint_t *head)
-{
-	listint_t *new;
-
-	if (head == NULL)
-		return (NULL);
-	new = NULL;
-	while (head != NULL)
-	{
-		new = add_nodeint(&new, head->n);
-		head = head->next;
-	}
-	return (new);
-}
-
-/**
  * add_nodeint - function adds a new node to the beginning of a listint_t list
  * @head: pointer to pointer to list
  * @n: n for new node
@@ -62,10 +41,18 @@ int is_palindrome(listint_t **head)
 	if (head == NULL || *head == NULL || (*head)->next == NULL)
 		return (1);
 	temp = *head;
-	revhead = reverse_list(temp);
-	rev = revhead;
+	revhead = NULL;
 	hare = *head;
 	while (hare != NULL && hare->next != NULL)
+	{
+		revhead = add_nodeint(&revhead, temp->n);
+		temp = temp->next;
+		hare = hare->next->next;
+	}
+	if (hare != NULL && hare->next == NULL)
+		temp = temp->next;
+	rev = revhead;
+	while (temp != NULL || rev != NULL)
 	{
 		if (temp->n != rev->n)
 		{
@@ -74,7 +61,6 @@ int is_palindrome(listint_t **head)
 		}
 		temp = temp->next;
 		rev = rev->next;
-		hare = hare->next->next;
 	}
 	free_listint(revhead);
 	return (1);
