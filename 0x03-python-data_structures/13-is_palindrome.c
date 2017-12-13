@@ -10,9 +10,9 @@ listint_t *reverse_list(listint_t *head)
 {
 	listint_t *new;
 
-	new = NULL;
 	if (head == NULL)
 		return (NULL);
+	new = NULL;
 	while (head != NULL)
 	{
 		new = add_nodeint(&new, head->n);
@@ -54,20 +54,25 @@ listint_t *add_nodeint(listint_t **head, const int n)
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *rev;
 	listint_t *temp;
+	listint_t *revhead;
+	listint_t *rev;
 
 	if (head == NULL || *head == NULL)
 		return (1);
 	temp = *head;
-	rev = reverse_list(*head);
+	revhead = reverse_list(temp);
+	rev = revhead;
 	while (temp != NULL && rev != NULL)
 	{
 		if (temp->n != rev->n)
+		{
+			free_listint(revhead);
 			return (0);
+		}
 		temp = temp->next;
 		rev = rev->next;
 	}
-
+	free_listint(revhead);
 	return (1);
 }
