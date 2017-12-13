@@ -57,13 +57,15 @@ int is_palindrome(listint_t **head)
 	listint_t *temp;
 	listint_t *revhead;
 	listint_t *rev;
+	listint_t *hare;
 
 	if (head == NULL || *head == NULL || (*head)->next == NULL)
 		return (1);
 	temp = *head;
 	revhead = reverse_list(temp);
 	rev = revhead;
-	while (temp != NULL && rev != NULL)
+	hare = *head;
+	while (hare != NULL && hare->next != NULL)
 	{
 		if (temp->n != rev->n)
 		{
@@ -72,6 +74,7 @@ int is_palindrome(listint_t **head)
 		}
 		temp = temp->next;
 		rev = rev->next;
+		hare = hare->next->next;
 	}
 	free_listint(revhead);
 	return (1);
