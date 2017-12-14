@@ -21,3 +21,17 @@
 * Prototype: `def uniq_add(my_list=[]):`
   * my_list: initial list
 * Return: sum of unique integers
+
+### 3-common_elements.py
+* Function returns a set of common elements in two sets
+* Prototype: `def common_elements(set_1, set_2):`
+  * set_1: first set
+  * set2: second set
+* Return: set of common elements of `set_1` and `set_2`
+
+### 4-only_diff_elements.py
+* Function returns a set of elements only in one set
+* Prototype: `def only_diff_elements(set_1, set_2):`
+  * set_1: first set
+  * set2: second set
+* Return: set of elements in only one set
