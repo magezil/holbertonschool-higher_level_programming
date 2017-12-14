@@ -50,4 +50,15 @@
 ### 7-update_dictionary.py
 * Function replaces or adds a key:value to a dictionary
 * Prototype: `def update_dictionary(my_dict, key, value):`
+  * my_dict: dictionary to count keys
+  * key: key to replace or add
+  * value: new value
 * Return: updated dictionary
+
+### 8-simple_delete.py
+* Function deletes a key in dictionary
+* Prototype: `def simple_delete(my_dict, key=""):`
+  * my_dict: dictionary to count keys
+  * key: key to del
+* Return: updated dictionary
+
