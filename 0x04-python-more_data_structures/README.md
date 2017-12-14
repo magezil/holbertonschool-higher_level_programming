@@ -35,3 +35,9 @@
   * set_1: first set
   * set2: second set
 * Return: set of elements in only one set
+
+### 5-number_keys.py
+* Function returns number of keys in a dictionary
+* Prototype: `def number_keys(my_dict):`
+  * my_dict: dictionary to count keys
+* Return: number of keys in `my_dict`
