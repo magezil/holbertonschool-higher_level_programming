@@ -47,4 +47,7 @@
 * Prototype: `def print_sorted_dictionary(my_dict):`
   * my_dict: dictionary to count keys
 
-###
+### 7-update_dictionary.py
+* Function replaces or adds a key:value to a dictionary
+* Prototype: `def update_dictionary(my_dict, key, value):`
+* Return: updated dictionary
