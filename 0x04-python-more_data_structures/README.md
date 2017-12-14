@@ -80,3 +80,9 @@
   * my_list: list of numbers
   * number: number to multiply by
 * Return: new list with multiplied values
+
+### 12-roman_to_int.py
+* Function converts a Roman numeral into an integer
+* Prototype: `def roman_to_int(roman_string):`
+  * roman_string: Roman numeral to convert
+* Return: integer value
