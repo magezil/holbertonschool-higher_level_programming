@@ -86,3 +86,9 @@
 * Prototype: `def roman_to_int(roman_string):`
   * roman_string: Roman numeral to convert
 * Return: integer value
+
+### 100-weight_average.py
+* Function returns the weighted average of a list of integer tuples
+* Prototype: `def weight_average(my_list=[]):`
+  * my_list: list of tuples `(<score>, <weight>)`
+* Return: weighted average
