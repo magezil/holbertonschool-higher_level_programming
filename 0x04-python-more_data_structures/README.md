@@ -41,3 +41,10 @@
 * Prototype: `def number_keys(my_dict):`
   * my_dict: dictionary to count keys
 * Return: number of keys in `my_dict`
+
+### 6-print_sorted_dictionary.py
+* Function prints a dictionary of sorted keys
+* Prototype: `def print_sorted_dictionary(my_dict):`
+  * my_dict: dictionary to count keys
+
+###
