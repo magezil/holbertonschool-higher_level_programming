@@ -45,12 +45,12 @@
 ### 6-print_sorted_dictionary.py
 * Function prints a dictionary of sorted keys
 * Prototype: `def print_sorted_dictionary(my_dict):`
-  * my_dict: dictionary to count keys
+  * my_dict: dictionary to print sorted keys
 
 ### 7-update_dictionary.py
 * Function replaces or adds a key:value to a dictionary
 * Prototype: `def update_dictionary(my_dict, key, value):`
-  * my_dict: dictionary to count keys
+  * my_dict: dictionary to replace or add
   * key: key to replace or add
   * value: new value
 * Return: updated dictionary
@@ -58,13 +58,18 @@
 ### 8-simple_delete.py
 * Function deletes a key in dictionary
 * Prototype: `def simple_delete(my_dict, key=""):`
-  * my_dict: dictionary to count keys
+  * my_dict: dictionary to delete key from
   * key: key to del
 * Return: updated dictionary
 
 ### 9-multiply_by_2.py
 * Function returns new dictionary with all values multiplied by 2
 * Prototype: `def multiply_by_2(my_dict):`
-  * my_dict: dictionary to count keys
+  * my_dict: dictionary to operate on
 * Return: new dictionary
 
+### 10-best_score.py
+* Function returns key with biggest integer value
+* Prototype: `def best_score(my_dict):`
+  * my_dict: dictionary to operate on
+* Return: largest score, `None` if no score found
