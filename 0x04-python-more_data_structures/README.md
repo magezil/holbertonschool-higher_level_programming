@@ -73,3 +73,10 @@
 * Prototype: `def best_score(my_dict):`
   * my_dict: dictionary to operate on
 * Return: largest score, `None` if no score found
+
+### 11-mutiply_list_map.py
+* Function returns a list with all values multiplied by a number
+* Prototype: `def mutiply_list_map(my_list=[], number=0):`
+  * my_list: list of numbers
+  * number: number to multiply by
+* Return: new list with multiplied values
