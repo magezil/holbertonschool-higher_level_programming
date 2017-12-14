@@ -15,3 +15,9 @@
   * search: element to replace
   * replace: new element after replace
 * Return: new list with replacement
+
+### 2-uniq_add.py
+* Function adds only the unique integers in a list
+* Prototype: `def uniq_add(my_list=[]):`
+  * my_list: initial list
+* Return: sum of unique integers
