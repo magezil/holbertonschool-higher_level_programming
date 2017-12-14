@@ -68,3 +68,16 @@
 * C function that checks if a singly linked list is a palindrome
 * Prototype: `int is_palindrome(listint_t **head);`
 * Return: `0` if it is not a palindrome, `1` if it is
+
+### 100-print_python_list_info.c
+* C function that prints some basic information about Python lists
+* Prototype: `void print_python_list_info(PyObject *p);`
+* Print format:
+```
+[*] Size of the Python List = <size>
+[*] Allocated = <space allocated>
+Element 0: <type>
+Element 1: <type>
+...
+Element <size - 1>: <type>
+```
