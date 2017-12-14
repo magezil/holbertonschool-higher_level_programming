@@ -62,3 +62,9 @@
   * key: key to del
 * Return: updated dictionary
 
+### 9-multiply_by_2.py
+* Function returns new dictionary with all values multiplied by 2
+* Prototype: `def multiply_by_2(my_dict):`
+  * my_dict: dictionary to count keys
+* Return: new dictionary
+
