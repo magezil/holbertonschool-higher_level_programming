@@ -9,16 +9,23 @@
 void print_python_list(PyObject *p)
 {
 	PyListObject *listobj;
+	PyObject *obj;
 	ssize_t i;
 
 	if (!p)
 		return;
-	listobj = (PyListObject *) p;
+	listobj = (PyListObject *)p;
 	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %d\n", (int)PyList_Size(p));
 	printf("[*] Allocated = %d\n", (int)listobj->allocated);
 	for (i = 0; i < PyList_Size(p); i++)
-		printf("Element %zd: %s\n", i, listobj->ob_item[i]->ob_type->tp_name);
+	{
+		obj = listobj->ob_item[i];
+		printf("Element %zd: %s\n", i, obj->ob_type->tp_name);
+/*		if (strcmp(obj->ob_type->tp_name, "bytes") == 0)
+ *			print_python_bytes(obj);
+ */
+	}
 }
 
 /**
@@ -53,8 +60,11 @@ void print_python_bytes(PyObject *p)
 	{
 		current = string[i];
 		if (current >= 0 && current < 16)
-			printf("0");
-		printf("%hhx ", current);
+			printf("0%x", current);
+		else
+			printf("%hhx", current);
+		if (i < size - 1)
+			printf(" ");
 	}
 	printf("\n");
 }
