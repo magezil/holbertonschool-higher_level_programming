@@ -10,6 +10,7 @@ void print_python_list(PyObject *p)
 {
 	PyListObject *listobj;
 	PyObject *obj;
+	const char *type;
 	ssize_t i;
 
 	if (!p)
@@ -20,11 +21,11 @@ void print_python_list(PyObject *p)
 	printf("[*] Allocated = %d\n", (int)listobj->allocated);
 	for (i = 0; i < PyList_Size(p); i++)
 	{
-		obj = listobj->ob_item[i];
-		printf("Element %zd: %s\n", i, obj->ob_type->tp_name);
-/*		if (strcmp(obj->ob_type->tp_name, "bytes") == 0)
- *			print_python_bytes(obj);
- */
+		obj = (PyObject *)listobj->ob_item[i];
+		type = obj->ob_type->tp_name;
+		printf("Element %zd: %s\n", i, type);
+		if (strcmp(type, "bytes") == 0)
+ 			print_python_bytes((PyObject *)obj);
 	}
 }
 
