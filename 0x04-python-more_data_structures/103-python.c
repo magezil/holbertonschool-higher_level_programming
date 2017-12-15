@@ -14,6 +14,7 @@ void print_python_list(PyObject *p)
 	if (!p)
 		return;
 	listobj = (PyListObject *) p;
+	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %d\n", (int)PyList_Size(p));
 	printf("[*] Allocated = %d\n", (int)listobj->allocated);
 	for (i = 0; i < PyList_Size(p); i++)
@@ -32,9 +33,9 @@ void print_python_bytes(PyObject *p)
 	char *string;
 
 	printf("[.] bytes object info\n");
-	if (!p)
+	if (!PyBytes_Check(p))
 	{
-		printf("  [ERROR] Invalid Bytes Object");
+		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
 /*	bytesobj = (PyBytesObject *) p;
