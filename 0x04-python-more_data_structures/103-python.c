@@ -24,8 +24,9 @@ void print_python_list(PyObject *p)
 		obj = (PyObject *)listobj->ob_item[i];
 		type = obj->ob_type->tp_name;
 		printf("Element %zd: %s\n", i, type);
-		if (strcmp(type, "bytes") == 0)
- 			print_python_bytes((PyObject *)obj);
+	/*	if (strcmp(type, "bytes") == 0)
+ 	 *		print_python_bytes((PyObject *)obj);
+ 	 */	
 	}
 }
 
@@ -35,8 +36,7 @@ void print_python_list(PyObject *p)
  */
 void print_python_bytes(PyObject *p)
 {
-/*	PyBytesObject *bytesobj;
-*/	ssize_t i;
+	ssize_t i;
 	ssize_t size;
 	char *string;
 	int current;
