@@ -27,5 +27,9 @@
 * Return: new list of length `list_length` with result of divisions
 
 ### 5-raise_exception.py
-* Function raises a type of exception
+* Function raises a type exception
 * Prototype: `def raise_exception():`
+
+### 6-raise_exception_msg.py
+* Function raises a name exception with a message
+* Prototype: `def raise_exception_msg(message=""):`
