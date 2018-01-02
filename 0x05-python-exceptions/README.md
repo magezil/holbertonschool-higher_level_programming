@@ -20,3 +20,8 @@
 * Function divides 2 integers and prints the result
 * Prototype: `def safe_print_division(a, b):`
 * Return: result of division, `None` if divide by 0
+
+### 4-list_division.py
+* Function divides element by element from two lists
+* Prototype: `def list_division(my_list_1, my_list_2, list_length):`
+* Return: new list of length `list_length` with result of divisions
