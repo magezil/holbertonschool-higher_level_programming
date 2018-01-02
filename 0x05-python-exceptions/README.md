@@ -38,3 +38,7 @@
 * Function prints an integer
 * Prototype: `def safe_print_integer_err(value):`
 * Return: `True` if value is printed correctly, `False` otherwise
+
+### 101-safe_function.py
+* Function executes a given function `fct` safely
+* Prototype: `def safe_function(fct, *args):`
