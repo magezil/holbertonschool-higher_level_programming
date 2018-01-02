@@ -25,3 +25,7 @@
 * Function divides element by element from two lists
 * Prototype: `def list_division(my_list_1, my_list_2, list_length):`
 * Return: new list of length `list_length` with result of divisions
+
+### 5-raise_exception.py
+* Function raises a type of exception
+* Prototype: `def raise_exception():`
