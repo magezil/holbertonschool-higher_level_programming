@@ -33,3 +33,8 @@
 ### 6-raise_exception_msg.py
 * Function raises a name exception with a message
 * Prototype: `def raise_exception_msg(message=""):`
+
+### 100-safe_print_integer_err.py
+* Function prints an integer
+* Prototype: `def safe_print_integer_err(value):`
+* Return: `True` if value is printed correctly, `False` otherwise
