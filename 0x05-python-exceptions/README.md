@@ -15,3 +15,8 @@
 * Function prints the first `x` elements that are integers in a list
 * Prototype: `def safe_print_list_integers(my_list=[], x=0):`
 * Return: number of integers printed
+
+### 3-safe_print_division.py
+* Function divides 2 integers and prints the result
+* Prototype: `def safe_print_division(a, b):`
+* Return: result of division, `None` if divide by 0
