@@ -10,7 +10,6 @@ class Square:
         """
         self.size = size
 
-
     @property
     def size(self):
         """size: size of square
@@ -31,7 +30,6 @@ class Square:
     def area(self):
         """Calculates the area of Square instance and returns it"""
         return self.size ** 2
-
 
     def my_print(self):
         """Prints to stdout the square with # or an empty line if size is 0"""
