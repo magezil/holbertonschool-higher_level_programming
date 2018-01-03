@@ -15,6 +15,10 @@ class Square:
         """size: size of square
 
         setter validates size is an integer and >= 0
+
+        Raises:
+            TypeError: If size is not an int
+            ValueError: If size is < 0
         """
         return self.__size
 
