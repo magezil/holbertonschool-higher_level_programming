@@ -14,3 +14,10 @@
 * Class `Square` with validated private instance attribute `size`
 * Instance method `area` - returns area of current `Square` instance
   * Prototype: `def area(self):`
+
+### 4-square.py
+* Class `Square` with validated private instance attribute `size`
+  * Property `size` now included to set and get `size`
+* Instance method `area` - returns area of current `Square` instance
+  * Prototype: `def area(self):`
+
