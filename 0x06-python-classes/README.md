@@ -23,7 +23,16 @@
 
 ### 5-square.py
 * Class `Square` with validated private instance attribute `size`
-  * Property `size` now included to set and get `size`
+  * Property `size` to set and get `size`
+* Instance method `area` - returns area of current `Square` instance
+  * Prototype: `def area(self):`
+* Instance method `my_print` - prints to stdout the square with `#` or empty line if size == 0
+  * Prototype: `def my_print(self):`
+
+### 6-square.py
+* Class `Square` with validated private instance attributes `size` and `position`
+  * Property `size` to set and get `size`
+  * Property `position` to set and get `position`
 * Instance method `area` - returns area of current `Square` instance
   * Prototype: `def area(self):`
 * Instance method `my_print` - prints to stdout the square with `#` or empty line if size == 0
