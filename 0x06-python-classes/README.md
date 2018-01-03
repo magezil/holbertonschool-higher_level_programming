@@ -10,3 +10,7 @@
 ### 2-square.py
 * Class `Square` with validated private instance attribute `size`
 
+### 3-square.py
+* Class `Square` with validated private instance attribute `size`
+* Instance method `area` - returns area of current `Square` instance
+  * Prototype: `def area(self):`
