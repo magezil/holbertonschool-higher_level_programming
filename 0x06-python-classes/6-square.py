@@ -35,7 +35,7 @@ class Square:
     @property
     def position(self):
         """position: position of the square
-        
+
         setter validates that position is a tuple of 2 positive integers
 
         Raises:
