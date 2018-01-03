@@ -14,13 +14,18 @@ void print_python_list(PyObject *p);
  */
 void print_python_float(PyObject *p)
 {
+	float value;
 	printf("[.] float object info\n");
 	if (!PyFloat_Check(p))
 	{
 		printf("  [ERROR] Invalid Float Object\n");
 		return;
 	}
-	printf(" value: %.7g\n", ((PyFloatObject *)p)->ob_fval);
+	value = ((PyFloatObject *)p)->ob_fval;
+	if (value - (int)value < 0.0000000001)
+		printf("  value: %g.0\n", value);
+	else
+		printf(" value: %g\n", value);
 	fflush(stdout);
 }
 /**
@@ -60,6 +65,7 @@ void print_python_bytes(PyObject *p)
 			printf(" ");
 	}
 	printf("\n");
+	fflush(stdout);
 }
 
 /**
@@ -93,5 +99,6 @@ void print_python_list(PyObject *p)
 			print_python_bytes((PyObject *)obj);
 		if (PyFloat_Check(obj))
 			print_python_float((PyObject *)obj);
+		fflush(stdout);
 	}
 }
