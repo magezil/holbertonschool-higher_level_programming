@@ -33,7 +33,7 @@ class Square:
             self.__size = size
 
     @property
-    def position(self, position):
+    def position(self):
         """position: position of the square
         
         setter validates that position is a tuple of 2 positive integers
@@ -50,7 +50,6 @@ class Square:
         else:
             self.__position = position
 
-
     def area(self):
         """Calculates the area of Square instance and returns it"""
         return self.size ** 2
@@ -65,8 +64,6 @@ class Square:
             print("")
         for i in range(self.size):
             print("{}{}".format(" " * self.position[0], "#" * self.size))
-
-
 
 
 def check_position(position):
