@@ -21,11 +21,15 @@ class Square:
             self.__position = position
 
     def __str__(self):
+        if self.size == 0:
+            return "\n"
         sq = ""
         for i in range(self.position[1]):
             sq += "\n"
         for i in range(self.size):
-            sq += "{}{}\n".format(" " * self.position[0], "#" * self.size)
+            sq += "{}{}".format(" " * self.position[0], "#" * self.size)
+            if i < self.size - 1:
+                sq += "\n"
         return sq
 
     @property
