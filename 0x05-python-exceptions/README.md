@@ -102,3 +102,9 @@
  13     >>  103 LOAD_FAST                2 (result)
             106 RETURN_VALUE
 ```
+
+### 103-python.c
+* C functions to print basic information about Python lists, bytes, and Python float objects
+* Prototype (PyListObject): `void print_python_list(PyObject *p);`
+* Prototype (PyBytesObject): `void print_python_bytes(PyObject *p);`
+* Prototype (PyFloatObject): `void print_python_float(PyObject *p);`
