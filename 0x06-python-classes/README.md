@@ -37,3 +37,9 @@
   * Prototype: `def area(self):`
 * Instance method `my_print` - prints to stdout the square with `#` or empty line if size == 0
   * Prototype: `def my_print(self):`
+
+### 101-square.py
+* Make printing `Square` instance have same behavior as `my_print()`, based on `6-square.py`
+
+### 102-square.py
+* Add comparison functionality to `Square` class based on `4-square.py`
