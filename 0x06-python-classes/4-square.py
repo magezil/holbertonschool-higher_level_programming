@@ -13,7 +13,10 @@ class Square:
 
     @property
     def size(self):
-        """size: size of square"""
+        """size: size of square
+        
+        setter validates size is an integer and >= 0
+        """
         return self.__size
 
     @size.setter
