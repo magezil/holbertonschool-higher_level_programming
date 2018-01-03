@@ -14,7 +14,7 @@ void print_python_list(PyObject *p);
  */
 void print_python_float(PyObject *p)
 {
-	float value;
+	double value;
 	printf("[.] float object info\n");
 	if (!PyFloat_Check(p))
 	{
@@ -22,7 +22,9 @@ void print_python_float(PyObject *p)
 		return;
 	}
 	value = ((PyFloatObject *)p)->ob_fval;
-	if (value - (int)value < 0.0000000001)
+	if (value >= 0 && value - (int)value < 0.0000000001)
+		printf("  value: %g.0\n", value);
+	else if (value < 0 && value - (int)value > -0.0000000001)
 		printf("  value: %g.0\n", value);
 	else
 		printf(" value: %g\n", value);
