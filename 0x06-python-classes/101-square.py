@@ -13,7 +13,7 @@ class Square:
 
     def __str__(self):
         if self.size == 0:
-            return "\n"
+            return ""
         sq = "\n" * self.position[1]
         for i in range(self.size):
             sq += "{}{}".format(" " * self.position[0], "#" * self.size)
