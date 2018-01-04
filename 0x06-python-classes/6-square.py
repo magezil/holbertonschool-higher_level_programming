@@ -59,11 +59,11 @@ class Square:
         return self.__position
 
     @position.setter
-    def position(self, position):
-        if not self.__check_position(position):
+    def position(self, value):
+        if not self.__check_position(value):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = position
+            self.__position = value
 
     def area(self):
         """Calculates the area of Square instance and returns it"""
