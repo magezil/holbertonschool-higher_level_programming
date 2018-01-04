@@ -32,17 +32,6 @@ class Square:
         else:
             self.__size = size
 
-    @property
-    def position(self):
-        """position: position of the square
-
-        setter validates that position is a tuple of 2 positive integers
-
-        Raises:
-            TypeError: If position is not a tuple of two positive integers
-        """
-        return self.__position
-
     def __check_position(self, position):
         """Checks if position is a tuple of two positive integers
 
@@ -57,6 +46,17 @@ class Square:
             return False
         else:
             return True
+
+    @property
+    def position(self):
+        """position: position of the square
+
+        setter validates that position is a tuple of 2 positive integers
+
+        Raises:
+            TypeError: If position is not a tuple of 2 positive integers
+        """
+        return self.__position
 
     @position.setter
     def position(self, position):
