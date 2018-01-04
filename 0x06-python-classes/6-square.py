@@ -44,7 +44,11 @@ class Square:
         return self.__position
 
     def __check_position(self, position):
-        """Checks if position is a tuple of two positive integers"""
+        """Checks if position is a tuple of two positive integers
+
+        Args:
+            position: position of square
+        """
         if type(position) is not tuple or len(position) != 2:
             return False
         elif type(position[0]) is not int or position[0] < 0:
