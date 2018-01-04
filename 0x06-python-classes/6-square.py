@@ -8,17 +8,8 @@ class Square:
         """Args:
                size: size of square
         """
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
-
-        if not self.__check_position(position):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
