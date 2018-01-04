@@ -15,7 +15,7 @@ class Square:
         else:
             self.__size = size
 
-        if not check_position(position):
+        if not self.__check_position(position):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = position
@@ -52,9 +52,20 @@ class Square:
         """
         return self.__position
 
+    def __check_position(self, position):
+        """Checks if position is a tuple of two positive integers"""
+        if type(position) is not tuple:
+            return False
+        elif type(position[0]) is not int or position[0] < 0:
+            return False
+        elif type(position[1]) is not int or position[1] < 0:
+            return False
+        else:
+            return True
+
     @position.setter
     def position(self, position):
-        if not check_position(position):
+        if not self.__check_position(position):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = position
@@ -67,21 +78,9 @@ class Square:
         """Prints to stdout the square with # or an empty line if size is 0,
         position indicated by spaces and new lines
         """
-        if self.size == 0:
-            print("")
         for i in range(self.position[1]):
+            print("")
+        if self.size == 0:
             print("")
         for i in range(self.size):
             print("{}{}".format(" " * self.position[0], "#" * self.size))
-
-
-def check_position(position):
-    """Checks if position is a tuple of two positive integers"""
-    if type(position) is not tuple:
-        return False
-    elif type(position[0]) is not int or position[0] < 0:
-        return False
-    elif type(position[1]) is not int or position[1] < 0:
-        return False
-    else:
-        return True
