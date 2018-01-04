@@ -52,7 +52,10 @@ class Square:
             self.__position = value
 
     def __check_position(self, position):
-        """Checks if position is a tuple of two positive integers"""
+        """Checks if position is a tuple of two positive integers
+
+        Returns: True if position is valid, False otherwise
+        """
         if type(position) is not tuple or len(position) != 2:
             return False
         elif type(position[0]) is not int or position[0] < 0:
@@ -63,7 +66,7 @@ class Square:
             return True
 
     def area(self):
-        """Calculates the area of Square instance and returns it"""
+        """Returns the calculated the area of Square instance"""
         return self.size ** 2
 
     def my_print(self):
