@@ -63,16 +63,16 @@ class Square:
 
     def area(self):
         """Calculates the area of Square instance and returns it"""
-        return self.__size ** 2
+        return self.size ** 2
 
     def my_print(self):
         """Prints to stdout the square with # or an empty line if size is 0,
         position indicated by spaces and new lines
         """
-        if self.__size == 0:
+        if self.size == 0:
             print()
             return
-        for i in range(self.__position[1]):
+        for i in range(self.position[1]):
             print()
-        for i in range(self.__size):
-            print("{}{}".format(" " * self.__position[0], "#" * self.__size))
+        for i in range(self.size):
+            print("{}{}".format(" " * self.position[0], "#" * self.size))
