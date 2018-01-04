@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+import math
+
+
 class MagicClass:
     """Magic class that does the same as given bytecode (Circle)"""
     def __init__(self, radius=0):
