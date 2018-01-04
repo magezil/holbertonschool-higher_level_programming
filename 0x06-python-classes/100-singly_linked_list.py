@@ -43,9 +43,9 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        if next_node and isinstance(value, Node):
-            self.next_node = value
-        else
+        if value == None or isinstance(value, Node):
+            self.__next_node = value
+        else:
             raise TypeError("next_node must be a Node object")
 
 
@@ -57,8 +57,24 @@ class SinglyLinkedList:
         self.__head = None
 
     def __str__(self):
-        """Retruns string version of singly linked list"""
-        if not self.__head:
-            return "" # return
+        """Returns string version of singly linked list"""
+        if self.__head == None:
+            return ""
+        temp = self.__head
+        list_str = ""
+        while temp != None:
+            list_str += str(temp.data)
+            temp = temp.next_node
+            if temp != None:
+                list_str += "\n"
+        return list_str
 
     def sorted_insert(self, value):
+        """Insert new Node to correct sorted position (increasing order)"""
+        if self.__head == None or value < self.__head.data:
+            self.__head = Node(value, self.__head)
+            return
+        temp = self.__head
+        while temp.next_node != None and temp.next_node.data < value:
+            temp = temp.next_node
+        temp.next_node = Node(value, temp.next_node)
