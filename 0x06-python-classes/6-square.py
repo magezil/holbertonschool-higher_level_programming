@@ -69,9 +69,9 @@ class Square:
         """Prints to stdout the square with # or an empty line if size is 0,
         position indicated by spaces and new lines
         """
-        for i in range(self.position[1]):
-            print("")
         if self.size == 0:
+            print("")
+        for i in range(self.position[1]):
             print("")
         for i in range(self.size):
             print("{}{}".format(" " * self.position[0], "#" * self.size))
