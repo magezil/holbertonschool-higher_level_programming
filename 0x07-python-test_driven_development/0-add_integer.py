@@ -4,6 +4,8 @@ This module defines the function add_integer(). For example,
 Raises:
     TypeError: if a or b are not a number (integer or float)
 """
+
+
 def add_integer(a, b):
     """
     Returns the result of a + b
