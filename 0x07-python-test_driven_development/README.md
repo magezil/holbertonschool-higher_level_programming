@@ -13,5 +13,9 @@
 * Function prints "My name is `first_name` `last_name`"
 * Prototype: `def say_my_name(first_name, last_name=""):`
 
+### 4-print_square.py
+* Function prints a square
+* Prototype: `def print_square(size):`
+
 ### /tests
 * Directory with function tests
