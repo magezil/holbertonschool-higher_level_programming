@@ -29,3 +29,15 @@ TypeError: a must be an integer
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+>>> add_integer(1)
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'b'
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'b'

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines the function add_integer(). For example,
+This module defines the function add_integer().
 Raises:
     TypeError: if a or b are not a number (integer or float)
 """
