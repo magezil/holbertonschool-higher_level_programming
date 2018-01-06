@@ -22,6 +22,10 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 Traceback (most recent call last):
 ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> matrix_divided("matrix", 3)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 >>> matrix = [1, 2, 3, 4, 5, 6]
 >>> matrix_divided(matrix, 3)
 Traceback (most recent call last):
