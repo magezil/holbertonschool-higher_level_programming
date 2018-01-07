@@ -43,10 +43,16 @@ Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres.
 <BLANKLINE>
 :
 <BLANKLINE>
+>>> text_indentation(".     ")
+.
+<BLANKLINE>
 >>> text_indentation("hello world")
 hello world
 >>> text_indentation("          hello world")
 hello world
+>>> text_indentation("          hello world!                 ")
+hello world!
+>>> text_indentation("                          ")
 >>> text_indentation("hello. world? yay:")
 hello.
 <BLANKLINE>
