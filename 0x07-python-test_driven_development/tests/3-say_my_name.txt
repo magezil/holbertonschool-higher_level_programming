@@ -5,6 +5,8 @@ My name is John Smith
 My name is Walter White
 >>> say_my_name("Bob")
 My name is Bob 
+>>> say_my_name("BÒb")
+My name is BÒb 
 >>> say_my_name("Bob", 123)
 Traceback (most recent call last):
 ...
