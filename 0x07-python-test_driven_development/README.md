@@ -21,5 +21,9 @@
 * Function prints text with two new lines after each `.`, `?`, `:`
 * Prototype: `def text_indentation(text):`
 
+### tests/6-max_integer_test.py
+* Use `unittest` module to write tests for given `max_integer()` function
+* `6-max_integer.py` function prototype: `def max_integer(list=[]):`
+
 ### /tests
 * Directory with function tests
