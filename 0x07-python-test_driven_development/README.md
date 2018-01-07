@@ -17,5 +17,9 @@
 * Function prints a square
 * Prototype: `def print_square(size):`
 
+### 5-text_indentation.py
+* Function prints text with two new lines after each `.`, `?`, `:`
+* Prototype: `def text_indentation(text):`
+
 ### /tests
 * Directory with function tests
