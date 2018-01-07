@@ -52,7 +52,9 @@ hello world
 hello world
 >>> text_indentation("          hello world!                 ")
 hello world!
->>> text_indentation("                          ")
+>>> text_indentation("          .                ")
+.
+<BLANKLINE>
 >>> text_indentation("hello. world? yay:")
 hello.
 <BLANKLINE>
@@ -67,6 +69,12 @@ world?
 <BLANKLINE>
 yay:
 <BLANKLINE>
+>>> text_indentation("hello. world? yay")
+hello.
+<BLANKLINE>
+world?
+<BLANKLINE>
+yay
 >>> text_indentation("I.?    : Am.?           Glad.")
 I.
 <BLANKLINE>
@@ -94,6 +102,7 @@ Am.
 Glad.
 <BLANKLINE>
 >>> text_indentation("")
+>>> text_indentation("           ")
 >>> text_indentation(123)
 Traceback (most recent call last):
 ...
