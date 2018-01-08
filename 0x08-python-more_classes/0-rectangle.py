@@ -5,4 +5,5 @@ Module creates the Rectangle class
 
 
 class Rectangle:
+    """Empty class Rectangle"""
     pass
