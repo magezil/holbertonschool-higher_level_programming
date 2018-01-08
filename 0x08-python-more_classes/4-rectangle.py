@@ -33,6 +33,10 @@ class Rectangle:
         """Returns a string representation able to create new instance"""
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
 
+    def __del__(self):
+        """Prints 'Bye rectangle...' when instance is deleted"""
+        print('Bye rectangle...')
+
     @property
     def width(self):
         """width: width of rectangle
