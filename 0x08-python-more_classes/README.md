@@ -35,6 +35,8 @@
 * Print "Bye rectangle..." when instance is deleted
 
 ### 6-rectangle.py
+* Add public class attribute `number_of_instances`
+  * Number of instances of Rectangle
 ### 7-rectangle.py
 ### 8-rectangle.py
 ### 9-rectangle.py
