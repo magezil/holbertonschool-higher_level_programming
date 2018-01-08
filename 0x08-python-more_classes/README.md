@@ -19,6 +19,11 @@
 * Instantiate: `def __init__(self, width=0, height=0):`
 
 ### 2-rectangle.py
+* Add public instance methods `area` and `parameter`
+* `def area(self):` - returns the rectangle area
+* `def perimeter(self):` - returns the rectangle perimeter
+  * if either `width` or `height` is `0` - return `0`
+
 ### 3-rectangle.py
 ### 4-rectangle.py
 ### 5-rectangle.py
