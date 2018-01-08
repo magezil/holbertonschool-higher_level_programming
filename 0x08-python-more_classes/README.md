@@ -43,6 +43,9 @@
   * Symbol used to represent Rectangle - default is `#`
 
 ### 8-rectangle.py
+* Add static method `def bigger_or_equal(rect_1, rect_2):`
+  * Return the biggest rectangle based on area or `rect_1` if both have the same area
+
 ### 9-rectangle.py
 
 ### 101-nqueens.py
