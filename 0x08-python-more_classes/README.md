@@ -29,6 +29,8 @@
   * should return an empty string if `width` or `height` are 0
 
 ### 4-rectangle.py
+* Define __repr__ to be able to create new instance of Rectangle
+
 ### 5-rectangle.py
 ### 6-rectangle.py
 ### 7-rectangle.py
