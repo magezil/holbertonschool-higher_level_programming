@@ -25,6 +25,9 @@
   * if either `width` or `height` is `0` - return `0`
 
 ### 3-rectangle.py
+* Adds functionality for print() and str()
+  * should return an empty string if `width` or `height` are 0
+
 ### 4-rectangle.py
 ### 5-rectangle.py
 ### 6-rectangle.py
