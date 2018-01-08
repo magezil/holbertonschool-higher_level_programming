@@ -23,8 +23,11 @@ class Rectangle:
         """Returns a string of Rectangle instance using #, empty string"""
         if self.width == 0 or self.height == 0:
             return ""
-        row = "#" * self.width + "\n"
-        return row * self.height
+        row = "#" * self.width
+        rect = row
+        for i in range(self.height - 1):
+            rect += "\n" + row
+        return rect
 
     @property
     def width(self):
