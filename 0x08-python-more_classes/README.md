@@ -47,5 +47,7 @@
   * Return the biggest rectangle based on area or `rect_1` if both have the same area
 
 ### 9-rectangle.py
+* Add class method `def square(cls, size=0):`
+  * Creates a new Rectangle with width == height == size
 
 ### 101-nqueens.py
