@@ -37,7 +37,11 @@
 ### 6-rectangle.py
 * Add public class attribute `number_of_instances`
   * Number of instances of Rectangle
+
 ### 7-rectangle.py
+* Add public class attribute `print_symbol`
+  * Symbol used to represent Rectangle - default is `#`
+
 ### 8-rectangle.py
 ### 9-rectangle.py
 
