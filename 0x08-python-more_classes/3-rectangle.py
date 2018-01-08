@@ -20,7 +20,7 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
-        """Returns a string version of Rectangle instance using #, empty string"""
+        """Returns a string of Rectangle instance using #, empty string"""
         if self.width == 0 or self.height == 0:
             return ""
         row = "#" * self.width + "\n"
