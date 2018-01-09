@@ -51,3 +51,6 @@
   * Creates a new Rectangle with width == height == size
 
 ### 101-nqueens.py
+* Solves N queents problem
+* Usage: `nqueens N`
+  * N must be greater than 4
