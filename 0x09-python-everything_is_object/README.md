@@ -53,7 +53,7 @@
 
 ### 8-answer.txt
 * The following lines print `True` since the value of `s1` and `s2` are the same
-```
+```python
 >>> s1 = "Holberton"
 >>> s2 = "Holberton"
 >>> print(s1 == s2)
@@ -61,7 +61,7 @@
 
 ### 9-answer.txt
 * The following lines print `True` because `s1` and `s2` do point to the same object because `str`s are immutable. Python automatically creates an alias for immutable types with the same value.
-```
+```python
 >>> s1 = "Holberton"
 >>> s2 = "Holberton"
 >>> print(s1 is s2)
@@ -69,7 +69,7 @@
 
 ### 10-answer.txt
 * The following lines print `True` since the values of `l1` and `l2` are the same.
-```
+```python
 >>> l1 = [1, 2, 3]
 >>> l2 = [1, 2, 3] 
 >>> print(l1 == l2)
@@ -77,7 +77,7 @@
 
 ### 11-answer.txt
 * The following lines print `False` because `l1` and `l2` are not aliases. Because lists are mutable, Python does not automatically create aliases for lists with the same value.
-```
+```python
 >>> l1 = [1, 2, 3]
 >>> l2 = [1, 2, 3] 
 >>> print(l1 is l2)
@@ -85,7 +85,7 @@
 
 ### 12-answer.txt
 * The following code prints `True` because `l1` and `l2` refer to the same list and will have the same value
-```
+```python
 >>> l1 = [1, 2, 3]
 >>> l2 = l1
 >>> print(l1 == l2)
@@ -93,7 +93,7 @@
 
 ### 13-answer.txt
 * The following lines print `True` because `l1` and `l2` are aliases.
-```
+```python
 >>> l1 = [1, 2, 3]
 >>> l2 = l1
 >>> print(l1 is l2)
@@ -146,4 +146,78 @@ l1 = [1, 2, 3]
 l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
+```
+
+### 19-copy_list.py
+* Function that returns a copy of a list `l`
+* Prototype: `def copy_list(l):`
+
+## The questions 20-23 answer whether the given code is a tuple or not
+### 20-answer.txt
+* Yes, it is an empty tuple
+```python
+a = ()
+```
+
+### 21-answer.txt
+* Yes, it is a tuple with 2 elements
+```python
+a = (1, 2)
+```
+
+### 22-answer.txt
+* No, it is not enough to surround an item with parentheses to make a tuple. type(a) is an int
+```python
+a = (1)
+```
+
+### 23-answer.txt
+* Yes, it is a tuple with 1 element
+```python
+a = (1, )
+```
+### 24-answer.txt
+* `True` because two `int`s with the same value have the same id (are aliases)
+```python
+a = (1)
+b = (1)
+a is b
+```
+
+### 25-answer.txt
+* `False` because each tuple will have its own id (they are not aliases) even if they have the same value. This is because the value of a tuple may change based on the object(s) references stored within it. For example, a tuple may hold references to `str`s or `list`s, which are mutable.
+```python
+a = (1, 2)
+b = (1, 2)
+a is b
+```
+
+### 26-answer.txt
+* `True` since tuples are immutable so no value can be added to the empty tuple, both variables will reference the same empty tuple
+```python
+a = ()
+b = ()
+a is b
+```
+
+### 27-answer.txt
+* The id of `a` will change because adding this way with lists creates a new id
+```python
+>>> id(a)
+139926795932424
+>>> a
+[1, 2, 3, 4]
+>>> a = a + [5]
+>>> id(a)
+```
+
+### 28-answer.txt
+* The id of `a` will not change because lists are mutable. As such, changing the list will not change the id
+```python
+>>> a
+[1, 2, 3]
+>>> id (a)
+139926795932424
+>>> a += [4]
+>>> id(a)
 ```
