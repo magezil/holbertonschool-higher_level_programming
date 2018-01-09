@@ -34,16 +34,22 @@ def isValid(x, y, size):
     Returns True if valid coordinate, False otherwise
     """
     for i in range(size):
-        if board[i][y] == 1:
+        if board[i][y] == 1 or board[x][i] == 1:
             return False
-        if board[x][i] == 1:
+        dx = x + i
+        dy = y + i
+        if dx < size and dy < size and board[dx][dy] == 1:
             return False
+        dx = x - i
+        dy = y - i
+        if dx > 0 and dy > 0 and board[dx][dy] == 1:
+            return False
+
         for j in range(size):
-            if j != y:
-                if i + j == x + y and board[i][j] == 1:
-                    return False
-                if i - j == x - y and board[i][j] == 1:
-                    return False
+            if i + j == x + y and board[i][j] == 1:
+                return False
+            if i - j == x - y and board[i][j] == 1:
+                return False
     return True
 
 if __name__ == "__main__":
@@ -73,9 +79,7 @@ if __name__ == "__main__":
                     if board[x][y] == 1:
                         solutions.append([x, y])
             print(solutions)
-            sx = solutions[0][0]
             sy = solutions[0][1]
         else:
-            sx = start[0]
             sy = start[1]
-        start = (sx, sy + 1)
+        start = (0, sy + 1)
