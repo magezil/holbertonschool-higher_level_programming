@@ -13,14 +13,25 @@ def solve(queens, size, start):
     """
     if queens == 0:
         return True
-    for x in range(start[0], size):
-        for y in range(start[1], size):
-            if board[x][y] == 0 and isValid(x, y, size):
-                board[x][y] = 1
-                if solve(queens - 1, size, (x + 1, 0)):
-                    return True
-                board[x][y] = 0
-    return False
+    if start[0] >= size or start[1] >= size:
+        return False
+    x = start[0]
+    y = start[1]
+    if board[x][y] == 0 and isValid(x, y, size):
+        board[x][y] = 1
+        if solve(queens - 1, size, (x + 1, 0)):
+            return True
+        board[x][y] = 0
+    return solve(queens, size, (x, y + 1))
+
+#    for x in range(start[0], size):
+#        for y in range(start[1], size):
+#            if board[x][y] == 0 and isValid(x, y, size):
+#                board[x][y] = 1
+#                if solve(queens - 1, size, (x + 1, 0)):
+#                    return True
+#                board[x][y] = 0
+#    return False
 
 
 def isValid(x, y, size):
