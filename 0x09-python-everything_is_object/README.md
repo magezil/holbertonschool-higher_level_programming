@@ -109,7 +109,7 @@ print(l2)
 ```
 
 ### 15-answer.txt
-* This script prints `[1, 2, 3, 4]` because `l1` and `l2` are aliases. Adding a value to one list adds it to the next one.
+* This script prints `[1, 2, 3]` because adding a value to a list in this way creates a new list. This means that `l1` and `l2` are no longer aliases
 ```python
 l1 = [1, 2, 3]
 l2 = l1
