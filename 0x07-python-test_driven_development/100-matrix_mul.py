@@ -22,9 +22,9 @@ def matrix_mul(m_a, m_b):
         raise TypeError(matErr.format("m_a"))
     if type(m_b) is not list:
         raise TypeError(matErr.format("m_b"))
-    if len(m_a) == 0:
+    if len(m_a) == 0 or type(m_a[0]) is list and len(m_a[0]) == 0:
         raise ValueError(matEmptyErr.format("m_a"))
-    if len(m_b) == 0:
+    if len(m_b) == 0 or type(m_b[0]) is list and len(m_b[0]) == 0:
         raise ValueError(matEmptyErr.format("m_b"))
     size = -1
     for row in m_a:
