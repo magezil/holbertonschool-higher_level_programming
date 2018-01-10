@@ -57,8 +57,8 @@ def matrix_mul(m_a, m_b):
 
     result = [[0 for col in m_b[0]] for row in m_a]
     for i in range(len(m_a)):
-        for j in range(len(m_b)):
-            for k in range(len(m_b[0])):
+        for j in range(len(m_b[0])):
+            for k in range(len(m_b)):
                 result[i][j] += m_a[i][k] * m_b[k][j]
 
     return result
