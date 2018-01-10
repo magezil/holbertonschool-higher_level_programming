@@ -12,4 +12,4 @@ def lazy_matrix_mul(m_a, m_b):
     """
     Returns the result of m_a * m_b
     """
-    return np.dot(m_a, m_b).tolist()
+    return np.dot(m_a, m_b)
