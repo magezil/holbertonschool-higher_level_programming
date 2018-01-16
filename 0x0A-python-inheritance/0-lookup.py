@@ -4,7 +4,7 @@
 
 def lookup(obj):
     """Returns the list of available attributes and methods of obj
-    
+
     Param:
         obj: object to operate on
     """
