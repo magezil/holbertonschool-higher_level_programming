@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module creates an empty class BaseGeometry"""
+"""This module creates a class BaseGeometry"""
 
 
 class BaseGeometry:
