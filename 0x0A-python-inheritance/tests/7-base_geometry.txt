@@ -22,3 +22,7 @@ TypeError: float must be an integer
 Traceback (most recent call last):
 ...
 TypeError: neg_float must be an integer
+>>> bg.integer_validator("bool", True)
+Traceback (most recent call last):
+...
+TypeError: bool must be an integer
