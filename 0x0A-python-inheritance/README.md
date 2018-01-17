@@ -54,3 +54,12 @@
 ### 11-square.py  
 * Class `Square` inherits from `Rectangle` with additional functionality
 * implement `print()` and `__str__()` to print and return, respectively, `[Square] <width>/<height>`
+
+### 100-my_int.py  
+* Class `MyInt` inherits from `int`
+* Implement functionality of rebel child
+  * invert `==` and `!=` operators
+
+### 101-add_attribute.py  
+* Function adds attribute to class if possible
+* Prototype: `def add_attribute(obj, attribute, value):`
