@@ -36,7 +36,8 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Returns 'unofficial' representation of Rectangle instance"""
-        return "[{}] {:d}/{:d}".format(type(self).__name__, self.__width, self.__height)
+        name = type(self).__name__
+        return "[{}] {:d}/{:d}".format(name, self.__width, self.__height)
 
     def area(self):
         """Returns area of Rectangle instance"""
