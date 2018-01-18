@@ -26,6 +26,9 @@ class Student:
         """
         if not attrs:
             return self.__dict__
+        for a in attrs:
+            if type(a) is not str:
+                return self.__dict__
         filtered = {}
         for a in attrs:
             value = getattr(self, a, None)
