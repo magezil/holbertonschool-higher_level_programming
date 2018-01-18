@@ -24,7 +24,7 @@ class Student:
             attrs: attributes to retrieve.
             if not a list of strings, retrieve all attributes
         """
-        if not attrs:
+        if type(attrs) is not list:
             return self.__dict__
         for a in attrs:
             if type(a) is not str:
