@@ -78,3 +78,7 @@
 * Function returns list of lists of integers representing Pascal's triangle of `n`
 * Prototype: `def pascal_triangle(n):`
 * Return: list of lists of Pascal's triangle
+
+### 100-append_after.py  
+* Function inserts text into a file after each line containing given string
+* Prototype: `def append_after(filename="", search_string="", new_string=""):`
