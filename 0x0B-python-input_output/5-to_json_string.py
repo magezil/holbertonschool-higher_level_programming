@@ -4,9 +4,9 @@ import json
 
 
 def to_json_string(my_obj):
-    """Returns a JSON representation of given object
+    """Returns a JSON representation of given string object
 
     Param:
-        my_obj: object to get view JSON representation of
+        my_obj: string object to get view JSON representation of
     """
     return json.dumps(my_obj)
