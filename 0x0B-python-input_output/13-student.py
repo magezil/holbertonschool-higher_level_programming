@@ -24,10 +24,12 @@ class Student:
             attrs: attributes to retrieve.
             if not a list of strings, retrieve all attributes
         """
-        if not attrs:
+        if type(attrs) is not list:
             return self.__dict__
         filtered = {}
         for a in attrs:
+            if type(a) is not str:
+                return self.__dict__
             value = getattr(self, a, None)
             if value is None:
                 continue
