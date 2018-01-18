@@ -42,6 +42,5 @@ class Student:
         Params:
             json: dictionary with attributes to use
         """
-        self.__dict__ = {}
         for key, value in json.items():
             self.__dict__[key] = value
