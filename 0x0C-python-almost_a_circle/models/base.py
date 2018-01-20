@@ -11,7 +11,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Instantiate public instance attribute id
+        """Initialize public instance attribute id
 
         Param:
             id: id for instance
