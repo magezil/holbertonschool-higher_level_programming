@@ -44,6 +44,11 @@ class TestRectangleClass(unittest.TestCase):
         self.assertEqual(r1.x, 3)
         self.assertEqual(r1.y, 3)
 
+    def test_init_toomany(self):
+        """Initialize with too many arguments"""
+        with self.assertRaises(TypeError):
+            r1 = Rectangle(10, 2, 3, 4, 5, 6)
+
     def test_init_no_wh(self):
         """Try to initialize without width and height"""
         with self.assertRaises(TypeError):
@@ -289,7 +294,7 @@ class TestRectangleClass(unittest.TestCase):
         r1.update(10, id=7)
         self.assertEqual(r1.__str__(), "[Rectangle] (10) 10/10 - 10/10")
 
-    def test_update_args_kwargs(self):
+    def test_update_kwargs_args(self):
         """Test update args as kwargs (should only do kwargs)"""
         r1 = Rectangle(10, 10, 10, 10, 1)
         self.assertEqual(r1.__str__(), "[Rectangle] (1) 10/10 - 10/10")

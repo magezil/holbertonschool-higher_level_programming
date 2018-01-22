@@ -34,6 +34,11 @@ class TestBaseClass(unittest.TestCase):
         b4 = Base()
         self.assertEqual(b4.id, 6)
 
+    def test_init_toomany(self):
+        """Initialize with too many arguments"""
+        with self.assertRaises(TypeError):
+            b1 = Base(1, 2)
+
     def test_init_str(self):
         """Initialize id with string"""
         b1 = Base("123")

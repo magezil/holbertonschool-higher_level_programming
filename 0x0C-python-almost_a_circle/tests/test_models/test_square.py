@@ -37,6 +37,11 @@ class TestSquareClass(unittest.TestCase):
         self.assertEqual(s1.y, 9)
         self.assertEqual(s1.id, 21)
 
+    def test_init_toomany(self):
+        """Initialize with too many arguments"""
+        with self.assertRaises(TypeError):
+            s1 = Square(7, 8, 9, 21, 22)
+
     def test_str_size(self):
         """Test __str__() function, intialize with size only"""
         s1 = Square(1)
@@ -97,8 +102,29 @@ class TestSquareClass(unittest.TestCase):
             s1.size = "3"
 
     def test_update_args(self):
-        """Test if update args correctly"""
+        """Test if update args correctly with too many parameters"""
         s1 = Square(10, 10, 10, 1)
         self.assertEqual(s1.__str__(), "[Square] (1) 10/10 - 10")
         s1.update(89, 2, 3, 4, 5)
         self.assertEqual(s1.__str__(), "[Square] (89) 3/4 - 2")
+
+    def test_update_all_args(self):
+        """Test if update args correctly"""
+        s1 = Square(10, 10, 10, 1)
+        self.assertEqual(s1.__str__(), "[Square] (1) 10/10 - 10")
+        s1.update(89, 2, 3, 4)
+        self.assertEqual(s1.__str__(), "[Square] (89) 3/4 - 2")
+
+    def test_update_kwargs(self):
+        """Test if update kw args correctly"""
+        s1 = Square(10, 10, 10, 1)
+        self.assertEqual(s1.__str__(), "[Square] (1) 10/10 - 10")
+        s1.update(y=1, size=21, id=99, x=7)
+        self.assertEqual(s1.__str__(), "[Square] (99) 7/1 - 21")
+
+    def test_update_args_kwargs(self):
+        """Test update args and kwargs (kwargs should not update)"""
+        s1 = Square(10, 10, 10, 1)
+        self.assertEqual(s1.__str__(), "[Square] (1) 10/10 - 10")
+        s1.update(10, id=7, size=3)
+        self.assertEqual(s1.__str__(), "[Square] (10) 10/10 - 10")
