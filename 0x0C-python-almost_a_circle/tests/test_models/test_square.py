@@ -75,3 +75,20 @@ class TestSquareClass(unittest.TestCase):
         """Test inherited area()"""
         s1 = Square(3)
         self.assertEqual(s1.area(), 9)
+
+    def test_size_property(self):
+        """Test setter and getter for size"""
+        s1 = Square(3)
+        self.assertEqual(s1.size, 3)
+        s1.size = 9
+        self.assertEqual(s1.size, 9)
+
+    def test_size_property_invalid_value(self):
+        s1 = Square(3)
+        with self.assertRaisesRegex(ValueError, "width"):
+            s1.size = -3
+
+    def test_size_property_invalid_type(self):
+        s1 = Square(3)
+        with self.assertRaisesRegex(TypeError, "width"):
+            s1.size = "3"
