@@ -138,5 +138,5 @@ class Rectangle(Base):
             for i in range(len(args)):
                 setattr(self, attrs[i], args[i])
             return
-        for k,v in kwargs.items():
+        for k, v in kwargs.items():
             setattr(self, k, v)
