@@ -70,3 +70,8 @@ class TestSquareClass(unittest.TestCase):
         s1.display()
         sys.stdout = sys.__stdout__
         self.assertEqual(captured.getvalue(), "\n  ###\n  ###\n  ###\n")
+
+    def test_area(self):
+        """Test inherited area()"""
+        s1 = Square(3)
+        self.assertEqual(s1.area(), 9)
