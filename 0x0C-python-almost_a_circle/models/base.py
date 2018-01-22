@@ -13,7 +13,7 @@ class Base:
     def __init__(self, id=None):
         """Initialize public instance attribute id
 
-        Param:
+        Parameter:
             id: id for instance
 
         Attributes:
