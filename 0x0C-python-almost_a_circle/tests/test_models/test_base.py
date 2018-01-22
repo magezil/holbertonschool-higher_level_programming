@@ -30,3 +30,19 @@ class TestBaseClass(unittest.TestCase):
         self.assertEqual(b3.id, 8)
         b4 = Base()
         self.assertEqual(b4.id, 6)
+
+    def test_init_str(self):
+        b1 = Base("123")
+        self.assertEqual(b1.id, "123")
+
+    def test_init_dict(self):
+        b1 = Base({"123": "456"})
+        self.assertEqual(b1.id, {"123": "456"})
+
+    def test_init_tup(self):
+        b1 = Base((1, ))
+        self.assertEqual(b1.id, (1, ))
+
+    def test_init_list(self):
+        b1 = Base([1])
+        self.assertEqual(b1.id, [1])

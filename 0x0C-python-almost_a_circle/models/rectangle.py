@@ -130,3 +130,13 @@ class Rectangle(Base):
         line = " " * self.x + "#" * self.width + "\n"
         rectangle += (line) * self.height
         print(rectangle, end="")
+
+    def update(self, *args, **kwargs):
+        """Updates no keyword arguments first, then keyword arguments"""
+        if args and len(args) != 0:
+            attrs = ["id", "width", "height", "x", "y"]
+            for i in range(len(args)):
+                setattr(self, attrs[i], args[i])
+            return
+        for k,v in kwargs.items():
+            setattr(self, k, v)
