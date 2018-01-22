@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Unittest for Base class"""
+"""Unittests for Rectangle class"""
 import io
 import sys
 import unittest
