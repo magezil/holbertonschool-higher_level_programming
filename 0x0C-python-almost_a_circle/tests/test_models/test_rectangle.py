@@ -236,7 +236,6 @@ class TestRectangleClass(unittest.TestCase):
         r1.update(89, 2, 3, 4, 5, 6)
         self.assertEqual(r1.__str__(), "[Rectangle] (89) 4/5 - 2/3")
 
-
     def test_update_invalid_value(self):
         """Test update with invalid value"""
         r1 = Rectangle(10, 10, 10, 10, 1)
@@ -300,3 +299,12 @@ class TestRectangleClass(unittest.TestCase):
         self.assertEqual(r1.__str__(), "[Rectangle] (1) 10/10 - 10/10")
         r1.update(args=[10, 7], x=9)
         self.assertEqual(r1.__str__(), "[Rectangle] (1) 9/10 - 10/10")
+
+    def test_to_dictionary(self):
+        """Test to_dictionary()"""
+        attrs = {"id": 5, "width": 1, "height": 2, "x": 3, "y": 4}
+        r1 = Rectangle(1, 2, 3, 4, 5)
+        r_dict = r1.to_dictionary()
+        self.assertEqual(len(attrs), len(r_dict))
+        for k, v in attrs.items():
+            self.assertEqual(r_dict[k], v)

@@ -96,7 +96,9 @@ class TestSquareClass(unittest.TestCase):
             s1.size = -3
 
     def test_size_property_invalid_type(self):
-        """Test if size setter raises TypeException('width must be an integer')"""
+        """Test if size setter raises
+        TypeException('width must be an integer')
+        """
         s1 = Square(3)
         with self.assertRaisesRegex(TypeError, "width"):
             s1.size = "3"
