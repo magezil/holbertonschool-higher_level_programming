@@ -5,6 +5,7 @@ import sys
 import unittest
 from models.square import Square
 
+
 class TestSquareClass(unittest.TestCase):
     def test_init_empty(self):
         """Initialize with no arguments"""
