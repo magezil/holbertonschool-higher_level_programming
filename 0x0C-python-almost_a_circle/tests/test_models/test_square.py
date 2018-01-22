@@ -85,11 +85,20 @@ class TestSquareClass(unittest.TestCase):
         self.assertEqual(s1.size, 9)
 
     def test_size_property_invalid_value(self):
+        """Test if size setter raises ValueException('width must be > 0')"""
         s1 = Square(3)
         with self.assertRaisesRegex(ValueError, "width"):
             s1.size = -3
 
     def test_size_property_invalid_type(self):
+        """Test if size setter raises TypeException('width must be an integer')"""
         s1 = Square(3)
         with self.assertRaisesRegex(TypeError, "width"):
             s1.size = "3"
+
+    def test_update_args(self):
+        """Test if update args correctly"""
+        s1 = Square(10, 10, 10, 1)
+        self.assertEqual(s1.__str__(), "[Square] (1) 10/10 - 10")
+        s1.update(89, 2, 3, 4, 5)
+        self.assertEqual(s1.__str__(), "[Square] (89) 3/4 - 2")

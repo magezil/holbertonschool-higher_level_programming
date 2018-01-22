@@ -224,6 +224,14 @@ class TestRectangleClass(unittest.TestCase):
         r1.update(89, 2, 3, 4, 5)
         self.assertEqual(r1.__str__(), "[Rectangle] (89) 4/5 - 2/3")
 
+    def test_update_toomany(self):
+        """Test update with too many arguments"""
+        r1 = Rectangle(10, 10, 10, 10, 1)
+        self.assertEqual(r1.__str__(), "[Rectangle] (1) 10/10 - 10/10")
+        r1.update(89, 2, 3, 4, 5, 6)
+        self.assertEqual(r1.__str__(), "[Rectangle] (89) 4/5 - 2/3")
+
+
     def test_update_invalid_value(self):
         """Test update with invalid value"""
         r1 = Rectangle(10, 10, 10, 10, 1)

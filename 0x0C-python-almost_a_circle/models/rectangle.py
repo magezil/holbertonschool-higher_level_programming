@@ -136,7 +136,9 @@ class Rectangle(Base):
         if args and len(args) != 0:
             attrs = ["id", "width", "height", "x", "y"]
             for i in range(len(args)):
+                if i >= len(attrs):
+                    return
                 setattr(self, attrs[i], args[i])
-            return
-        for k, v in kwargs.items():
-            setattr(self, k, v)
+        else:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
