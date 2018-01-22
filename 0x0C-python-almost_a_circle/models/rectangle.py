@@ -126,5 +126,7 @@ class Rectangle(Base):
 
     def display(self):
         """Print to stdout the rectangle using #"""
-        rectangle = ("#" * self.width + "\n") * self.height
+        rectangle = "\n" * self.y
+        line = " " * self.x + "#" * self.width + "\n"
+        rectangle += (line) * self.height
         print(rectangle, end="")
