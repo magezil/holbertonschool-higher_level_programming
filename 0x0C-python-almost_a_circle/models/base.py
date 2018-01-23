@@ -136,10 +136,16 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        turtle.color((random(),random(),random()),(random(),random(),random()))
-        turtle.begin_fill()
-        while True:
-            turtle.forward(200)
-            turtle.left(170)
-            if abs(turtle.pos()) < 1:
-                break
+        shapes = list_rectangles + list_squares
+        for shape in shapes:
+            turtle.color((random(), random(), random()), (random(), random(), random()))
+            turtle.setpos((shape.x, shape.y))
+            turtle.down()
+            turtle.begin_fill()
+            for i in range(2):
+                turtle.forward(shape.height)
+                turtle.left(90)
+                turtle.forward(shape.width)
+                turtle.left(90)
+            turtle.end_fill()
+            turtle.up()
