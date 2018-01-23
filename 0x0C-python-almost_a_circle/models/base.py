@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This module defines the Base class"""
+import csv
 import json
 
 
@@ -68,6 +69,65 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Return instance with all attributes set"""
-        temp = cls(1, 1, 1)
+        if cls.__name__ == "Rectangle":
+            temp = cls(1, 1)
+        else:
+            temp = cls(1)
         temp.update(**dictionary)
         return temp
+
+    @classmethod
+    def load_from_file(cls):
+        """Return list of instances from file
+
+        filename is <Class name>.json
+        """
+        try:
+            filename = "{}.json".format(cls.__name__)
+            with open(filename, 'r') as f:
+                objs = Base.from_json_string(f.read())
+                instances = [cls.create(**obj) for obj in objs]
+                return instances
+        except FileNotFoundError:
+            return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Writes a representations of objects in list to CSV file
+        
+        Description"
+            Write CSV representation of objects in list_objs to file
+            <Class name>.csv
+
+            Parameter:
+                list_objs: list of objects
+        """
+        if cls.__name__ == "Rectangle":
+            attrs = ['id', 'width', 'height', 'x', 'y']
+        else:
+            attrs = ['id', 'size', 'x', 'y']
+        filename = "{}.csv".format(cls.__name__)
+        if list_objs is not None:
+            with open(filename, 'w', newline='') as csvf:
+                writer = csv.DictWriter(csvf, fieldnames=attrs)
+                writer.writeheader()
+                for obj in list_objs:
+                    writer.writerow(obj.to_dictionary())
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Return list of instances from file
+        filename is <Class name>.csv
+        """
+        try:
+            filename = "{}.csv".format(cls.__name__)
+            with open(filename, newline='') as csvf:
+                reader = csv.DictReader(csvf)
+                obj_list = []
+                for row in reader:
+                    for k, v in row.items():
+                        row[k] = int(v)
+                    obj_list.append(row)
+                return [cls.create(**obj) for obj in obj_list]
+        except FileNotFoundError:
+            return []

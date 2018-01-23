@@ -85,3 +85,11 @@ class TestBaseClass(unittest.TestCase):
     def test_from_json_string_none(self):
         """Test from_json_string with None"""
         self.assertEqual(Base.from_json_string(None), [])
+
+    def test_save_file_csv(self):
+        """Test save object to csv file"""
+        Base.save_to_file_(None)
+        with open("Base.csv", "r", newline='') as f:
+            bases = json.load(f)
+            self.assertEqual(len(bases), 0)
+            self.assertEqual(bases, [])

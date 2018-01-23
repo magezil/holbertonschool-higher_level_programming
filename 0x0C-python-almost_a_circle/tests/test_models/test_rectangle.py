@@ -349,3 +349,18 @@ class TestRectangleClass(unittest.TestCase):
         r2 = Rectangle.create(**r1_dictionary)
         self.assertEqual(r1.__str__(), r2.__str__())
         self.assertNotEqual(r1, r2)
+
+    def test_load_from_file(self):
+        """Test inherited load_from_file()"""
+        r1 = Rectangle(10, 7, 2, 8)
+        r2 = Rectangle(2, 4)
+        list_rectangles_input = [r1, r2]
+        Rectangle.save_to_file(list_rectangles_input)
+        list_rectangles_output = Rectangle.load_from_file()
+        self.assertEqual(len(list_rectangles_output), len(list_rectangles_input))
+        self.assertEqual(r1.__str__(), list_rectangles_output[0].__str__())
+        self.assertEqual(r2.__str__(), list_rectangles_output[1].__str__())
+
+#    def test_save_to_file_csv(self):
+
+#    def test_load_from_file_csv(self):

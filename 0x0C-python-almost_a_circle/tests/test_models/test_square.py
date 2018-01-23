@@ -159,3 +159,14 @@ class TestSquareClass(unittest.TestCase):
         s2 = Square.create(**s1_dictionary)
         self.assertEqual(s1.__str__(), s2.__str__())
         self.assertNotEqual(s1, s2)
+
+    def test_load_from_file(self):
+        """Test inherited_load_from_file()"""
+        s1 = Square(5)
+        s2 = Square(7, 9, 1)
+        list_squares_input = [s1, s2]
+        Square.save_to_file(list_squares_input)
+        list_squares_output = Square.load_from_file()
+        self.assertEqual(len(list_squares_output), len(list_squares_input))
+        self.assertEqual(s1.__str__(), list_squares_output[0].__str__())
+        self.assertEqual(s2.__str__(), list_squares_output[1].__str__())
