@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """This module defines the Base class"""
+from random import random
 import csv
 import json
+import turtle
 
 
 class Base:
@@ -131,3 +133,13 @@ class Base:
                 return [cls.create(**obj) for obj in obj_list]
         except FileNotFoundError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        turtle.color((random(),random(),random()),(random(),random(),random()))
+        turtle.begin_fill()
+        while True:
+            turtle.forward(200)
+            turtle.left(170)
+            if abs(turtle.pos()) < 1:
+                break
