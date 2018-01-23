@@ -64,3 +64,10 @@ class Base:
         if not json_string:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Return instance with all attributes set"""
+        temp = cls(1, 1, 1)
+        temp.update(**dictionary)
+        return temp

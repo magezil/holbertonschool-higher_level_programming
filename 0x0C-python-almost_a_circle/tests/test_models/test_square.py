@@ -151,3 +151,11 @@ class TestSquareClass(unittest.TestCase):
             self.assertEqual(len(sqs), 2)
             self.assertEqual(s1.to_dictionary(), sqs[0])
             self.assertEqual(s2.to_dictionary(), sqs[1])
+
+    def test_create(self):
+        """Test create()"""
+        s1 = Square(10, 7, 3, 8)
+        s1_dictionary = s1.to_dictionary()
+        s2 = Square.create(**s1_dictionary)
+        self.assertEqual(s1.__str__(), s2.__str__())
+        self.assertNotEqual(s1, s2)

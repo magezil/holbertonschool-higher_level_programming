@@ -81,3 +81,7 @@ class TestBaseClass(unittest.TestCase):
             bases = json.load(f)
             self.assertEqual(len(bases), 0)
             self.assertEqual(bases, [])
+
+    def test_from_json_string_none(self):
+        """Test from_json_string with None"""
+        self.assertEqual(Base.from_json_string(None), [])
