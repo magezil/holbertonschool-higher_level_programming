@@ -136,11 +136,18 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """Draws rectangles and squares"""
+        """Draws rectangles and squares
+
+        Screen set to 200 x 150 - best width/height ratio for correct display
+
+        Parameters:
+            list_rectangles: list of rectangles to draw
+            list_squares: list of squares to draw
+        """
         ts = turtle.getscreen()
         width, height = 200, 150
         turtle.screensize(width, height)
-        turtle.setworldcoordinates(0, 0, width, height) 
+        turtle.setworldcoordinates(0, 0, width, height)
         #print(turtle.screensize())
         turtle.pensize(5)
         shapes = list_rectangles + list_squares
