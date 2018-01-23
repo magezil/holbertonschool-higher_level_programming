@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Unittests for Square class"""
 import io
+import json
 import sys
 import unittest
 from models.square import Square
@@ -139,3 +140,14 @@ class TestSquareClass(unittest.TestCase):
         self.assertEqual(len(attrs), len(s_dict))
         for k, v in attrs.items():
             self.assertEqual(s_dict[k], v)
+
+    def test_save_to_file(self):
+        """Test inhertied save_to_file()"""
+        s1 = Square(10, 7, 2, 8)
+        s2 = Square(2)
+        Square.save_to_file([s1, s2])
+        with open("Square.json", "r") as f:
+            sqs = json.load(f)
+            self.assertEqual(len(sqs), 2)
+            self.assertEqual(s1.to_dictionary(), sqs[0])
+            self.assertEqual(s2.to_dictionary(), sqs[1])

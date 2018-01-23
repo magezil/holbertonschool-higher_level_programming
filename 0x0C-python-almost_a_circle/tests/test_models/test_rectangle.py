@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Unittests for Rectangle class"""
 import io
+import json
 import sys
 import unittest
 from models.base import Base
@@ -307,16 +308,25 @@ class TestRectangleClass(unittest.TestCase):
         r1 = Rectangle(1, 2, 3, 4, 5)
         r_dict = r1.to_dictionary()
         self.assertEqual(len(attrs), len(r_dict))
-        for k, v in attrs.items():
-            self.assertEqual(r_dict[k], v)
+        self.assertEqual(r_dict, attrs)
 
     def test_to_json_string(self):
-        """Test inherited method test_to_json_string"""
+        """Test inherited method test_to_json_string()"""
         r1 = Rectangle(10, 7, 2, 8, 27)
         dictionary = r1.to_dictionary()
-        json_dict = Base.to_json_string([dictionary])
+        json_dict_str = Base.to_json_string([dictionary])
         attrs = {'id': 27, 'width': 10, 'height': 7, 'x': 2, 'y': 8}
         self.assertEqual(len(attrs), len(dictionary))
-        for k, v in attrs.items():
-            self.assertEqual(dictionary[k], v)
-        self.assertEqual(json_dict, Base.to_json_string([attrs]))
+        self.assertEqual(dictionary, attrs)
+        self.assertEqual(json.loads(json_dict_str), json.loads(Base.to_json_string([attrs])))
+
+    def test_save_to_file(self):
+        """Test inhertied save_to_file()"""
+        r1 = Rectangle(10, 7, 2, 8)
+        r2 = Rectangle(2, 4)
+        Rectangle.save_to_file([r1, r2])
+        with open("Rectangle.json", "r") as f:
+            rects = json.load(f)
+            self.assertEqual(len(rects), 2)
+            self.assertEqual(r1.to_dictionary(), rects[0])
+            self.assertEqual(r2.to_dictionary(), rects[1])

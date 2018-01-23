@@ -35,7 +35,7 @@ class Base:
             list_directories: list of directories to get JSON representation
         """
         if not list_dictionaries or len(list_dictionaries) == 0:
-            return []
+            return '[]'
         return json.dumps(list_dictionaries)
 
     @classmethod
@@ -50,12 +50,17 @@ class Base:
             list_objs: list of objects
         """
         write_list = []
-        if list_objs is None:
-            filename = "Base.json"
-        else:
-            filename = "{}.json".format(type(list_objs[0]).__name__)
-        for obj in list_objs:
-            write_list.append(obj.to_dictionary())
+        filename = "{}.json".format(cls.__name__)
+        if list_objs is not None:
+            for obj in list_objs:
+                write_list.append(obj.to_dictionary())
         write_list = Base.to_json_string(write_list)
         with open(filename, 'w') as f:
             f.write(write_list)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Return list of JSON representation"""
+        if not json_string:
+            return []
+        return json.loads(json_string)

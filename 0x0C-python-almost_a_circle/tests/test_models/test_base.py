@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Unittests for Base class + Rectangle class for to_json_string()"""
+import json
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
@@ -59,3 +60,24 @@ class TestBaseClass(unittest.TestCase):
         """Initialize id with list"""
         b1 = Base([1])
         self.assertEqual(b1.id, [1])
+
+    def test_to_json_string_empty(self):
+        """Test inherited test_to_json_string() with empty list and None"""
+        self.assertEqual(Base.to_json_string([]), '[]')
+        self.assertEqual(Base.to_json_string(None), '[]')
+
+    def test_save_to_file_none(self):
+        """Test save_to_file() with None"""
+        Base.save_to_file(None)
+        with open("Base.json", "r") as f:
+            bases = json.load(f)
+            self.assertEqual(len(bases), 0)
+            self.assertEqual(bases, [])
+
+    def test_save_to_file_empty(self):
+        """Test save_to_file() with empty list"""
+        Base.save_to_file([])
+        with open("Base.json", "r") as f:
+            bases = json.load(f)
+            self.assertEqual(len(bases), 0)
+            self.assertEqual(bases, [])
