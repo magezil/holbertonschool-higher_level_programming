@@ -96,7 +96,7 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Writes a representations of objects in list to CSV file
-        
+
         Description"
             Write CSV representation of objects in list_objs to file
             <Class name>.csv
@@ -138,7 +138,9 @@ class Base:
     def draw(list_rectangles, list_squares):
         shapes = list_rectangles + list_squares
         for shape in shapes:
-            turtle.color((random(), random(), random()), (random(), random(), random()))
+            fill_color = (random(), random(), random())
+            pen_color = (random(), random(), random())
+            turtle.color(fill_color, pen_color)
             turtle.setpos((shape.x, shape.y))
             turtle.down()
             turtle.begin_fill()
