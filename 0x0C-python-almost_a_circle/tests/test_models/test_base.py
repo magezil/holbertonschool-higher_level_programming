@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Unittests for Base class"""
+"""Unittests for Base class + Rectangle class for to_json_string()"""
 import unittest
 from models.base import Base
+from models.rectangle import Rectangle
 
 
 class TestBaseClass(unittest.TestCase):

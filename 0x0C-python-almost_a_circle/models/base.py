@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This module defines the Base class"""
+import json
 
 
 class Base:
@@ -25,3 +26,36 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Return JSON representation of given list
+
+        Parameter:
+            list_directories: list of directories to get JSON representation
+        """
+        if not list_dictionaries or len(list_dictionaries) == 0:
+            return []
+        return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """Writes JSON string representation of objects in list to file
+
+        Description:
+            Writes JSON string representation of objects in list_objs to file
+            <Class name>.json
+
+        Parameter:
+            list_objs: list of objects
+        """
+        write_list = []
+        if list_objs is None:
+            filename = "Base.json"
+        else:
+            filename = "{}.json".format(type(list_objs[0]).__name__)
+        for obj in list_objs:
+            write_list.append(obj.to_dictionary())
+        write_list = Base.to_json_string(write_list)
+        with open(filename, 'w') as f:
+            f.write(write_list)

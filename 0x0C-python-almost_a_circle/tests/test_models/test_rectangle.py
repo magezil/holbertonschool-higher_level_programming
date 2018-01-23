@@ -3,6 +3,7 @@
 import io
 import sys
 import unittest
+from models.base import Base
 from models.rectangle import Rectangle
 
 
@@ -308,3 +309,14 @@ class TestRectangleClass(unittest.TestCase):
         self.assertEqual(len(attrs), len(r_dict))
         for k, v in attrs.items():
             self.assertEqual(r_dict[k], v)
+
+    def test_to_json_string(self):
+        """Test inherited method test_to_json_string"""
+        r1 = Rectangle(10, 7, 2, 8, 27)
+        dictionary = r1.to_dictionary()
+        json_dict = Base.to_json_string([dictionary])
+        attrs = {'id': 27, 'width': 10, 'height': 7, 'x': 2, 'y': 8}
+        self.assertEqual(len(attrs), len(dictionary))
+        for k, v in attrs.items():
+            self.assertEqual(dictionary[k], v)
+        self.assertEqual(json_dict, Base.to_json_string([attrs]))

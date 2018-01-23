@@ -130,3 +130,12 @@ class TestSquareClass(unittest.TestCase):
         self.assertEqual(s1.__str__(), "[Square] (1) 10/10 - 10")
         s1.update(10, id=7, size=3)
         self.assertEqual(s1.__str__(), "[Square] (10) 10/10 - 10")
+
+    def test_to_dictionary(self):
+        """Test to dictionary()"""
+        attrs = {"id": 5, "size": 2, "x": 3, "y": 4}
+        s1 = Square(2, 3, 4, 5)
+        s_dict = s1.to_dictionary()
+        self.assertEqual(len(attrs), len(s_dict))
+        for k, v in attrs.items():
+            self.assertEqual(s_dict[k], v)
