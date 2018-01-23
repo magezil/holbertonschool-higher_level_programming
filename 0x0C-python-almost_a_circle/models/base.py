@@ -136,6 +136,13 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
+        """Draws rectangles and squares"""
+        ts = turtle.getscreen()
+        width, height = 200, 150
+        turtle.screensize(width, height)
+        turtle.setworldcoordinates(0, 0, width, height) 
+        #print(turtle.screensize())
+        turtle.pensize(5)
         shapes = list_rectangles + list_squares
         for shape in shapes:
             fill_color = (random(), random(), random())
@@ -151,3 +158,4 @@ class Base:
                 turtle.left(90)
             turtle.end_fill()
             turtle.up()
+        ts.exitonclick()
