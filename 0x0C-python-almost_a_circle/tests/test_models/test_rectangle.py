@@ -318,7 +318,8 @@ class TestRectangleClass(unittest.TestCase):
         attrs = {'id': 27, 'width': 10, 'height': 7, 'x': 2, 'y': 8}
         self.assertEqual(len(attrs), len(dictionary))
         self.assertEqual(dictionary, attrs)
-        self.assertEqual(json.loads(json_dict_str), json.loads(Base.to_json_string([attrs])))
+        self.assertEqual(json.loads(json_dict_str),
+                         json.loads(Base.to_json_string([attrs])))
 
     def test_save_to_file(self):
         """Test inhertied save_to_file()"""
@@ -330,3 +331,10 @@ class TestRectangleClass(unittest.TestCase):
             self.assertEqual(len(rects), 2)
             self.assertEqual(r1.to_dictionary(), rects[0])
             self.assertEqual(r2.to_dictionary(), rects[1])
+
+    def test_from_json_string(self):
+        """Test inherited from_json_string()"""
+        list_input = [
+            {'id': 89, 'width': 10, 'height': 4},
+            {'id': 7, 'width': 1, 'height': 7}
+            ]
