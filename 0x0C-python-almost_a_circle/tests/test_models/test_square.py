@@ -153,6 +153,22 @@ class TestSquareClass(unittest.TestCase):
             self.assertEqual(s1.to_dictionary(), sqs[0])
             self.assertEqual(s2.to_dictionary(), sqs[1])
 
+    def test_save_to_file_none(self):
+        """Test save_to_file() with None"""
+        Square.save_to_file(None)
+        with open("Square.json", "r") as f:
+            sqs = json.load(f)
+            self.assertEqual(len(sqs), 0)
+            self.assertEqual(sqs, [])
+
+    def test_save_to_file_empty(self):
+        """Test save_to_file() with empty list"""
+        Square.save_to_file([])
+        with open("Square.json", "r") as f:
+            sqs = json.load(f)
+            self.assertEqual(len(sqs), 0)
+            self.assertEqual(sqs, [])
+
     def test_create(self):
         """Test create()"""
         s1 = Square(10, 7, 3, 8)
@@ -195,3 +211,19 @@ class TestSquareClass(unittest.TestCase):
         self.assertEqual(len(list_squares_output), len(list_squares_input))
         for si, so in zip(list_squares_input, list_squares_output):
             self.assertEqual(si.__str__(), so.__str__())
+
+    def test_save_file_csv_none(self):
+        """Test save None object to csv file"""
+        Square.save_to_file_csv(None)
+        with open("Square.csv", "r", newline='') as f:
+            sqs = Square.load_from_file_csv()
+            self.assertEqual(len(sqs), 0)
+            self.assertEqual(sqs, [])
+
+    def test_save_file_csv_empty(self):
+        """Test save empty list to csv file"""
+        Square.save_to_file_csv([])
+        with open("Square.csv", "r", newline='') as f:
+            sqs = Square.load_from_file_csv()
+            self.assertEqual(len(sqs), 0)
+            self.assertEqual(sqs, [])

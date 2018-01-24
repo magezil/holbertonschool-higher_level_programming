@@ -333,6 +333,22 @@ class TestRectangleClass(unittest.TestCase):
             self.assertEqual(r1.to_dictionary(), rects[0])
             self.assertEqual(r2.to_dictionary(), rects[1])
 
+    def test_save_to_file_none(self):
+        """Test save_to_file() with None"""
+        Rectangle.save_to_file(None)
+        with open("Rectangle.json", "r") as f:
+            rects = json.load(f)
+            self.assertEqual(len(rects), 0)
+            self.assertEqual(rects, [])
+
+    def test_save_to_file_empty(self):
+        """Test save_to_file() with empty list"""
+        Rectangle.save_to_file([])
+        with open("Rectangle.json", "r") as f:
+            rects = json.load(f)
+            self.assertEqual(len(rects), 0)
+            self.assertEqual(rects, [])
+
     def test_from_json_string(self):
         """Test inherited from_json_string()"""
         list_input = [
@@ -385,3 +401,19 @@ class TestRectangleClass(unittest.TestCase):
         self.assertEqual(len(list_rect_output), len(list_rect_input))
         for ri, ro in zip(list_rect_input, list_rect_output):
             self.assertEqual(ri.__str__(), ro.__str__())
+
+    def test_save_file_csv_none(self):
+        """Test save None object to csv file"""
+        Rectangle.save_to_file_csv(None)
+        with open("Rectangle.csv", "r", newline='') as f:
+            rects = Rectangle.load_from_file_csv()
+            self.assertEqual(len(rects), 0)
+            self.assertEqual(rects, [])
+
+    def test_save_file_csv_empty(self):
+        """Test save empty list to csv file"""
+        Rectangle.save_to_file_csv([])
+        with open("Rectangle.csv", "r", newline='') as f:
+            rects = Rectangle.load_from_file_csv()
+            self.assertEqual(len(rects), 0)
+            self.assertEqual(rects, [])
