@@ -109,12 +109,15 @@ class Base:
         else:
             attrs = ['id', 'size', 'x', 'y']
         filename = "{}.csv".format(cls.__name__)
-        if list_objs is not None:
-            with open(filename, 'w', newline='') as csvf:
+        with open(filename, 'w', newline='') as csvf:
+            if list_objs is not None:
                 writer = csv.DictWriter(csvf, fieldnames=attrs)
                 writer.writeheader()
                 for obj in list_objs:
                     writer.writerow(obj.to_dictionary())
+            else:
+                writer = csv.writer(csvf)
+                writer.writerow([[]])
 
     @classmethod
     def load_from_file_csv(cls):

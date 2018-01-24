@@ -82,14 +82,32 @@ class TestBaseClass(unittest.TestCase):
             self.assertEqual(len(bases), 0)
             self.assertEqual(bases, [])
 
+    def test_load_from_file(self):
+        """Test load_from_file with non-existant file"""
+        obj = Base.load_from_file()
+        self.assertEqual(obj, [])
+
     def test_from_json_string_none(self):
         """Test from_json_string with None"""
         self.assertEqual(Base.from_json_string(None), [])
 
-    def test_save_file_csv(self):
-        """Test save object to csv file"""
-        Base.save_to_file_(None)
+    def test_save_file_csv_none(self):
+        """Test save None object to csv file"""
+        Base.save_to_file_csv(None)
         with open("Base.csv", "r", newline='') as f:
-            bases = json.load(f)
+            bases = Base.load_from_file_csv()
             self.assertEqual(len(bases), 0)
             self.assertEqual(bases, [])
+
+    def test_save_file_csv_empty(self):
+        """Test save empty list to csv file"""
+        Base.save_to_file_csv([])
+        with open("Base.csv", "r", newline='') as f:
+            bases = Base.load_from_file_csv()
+            self.assertEqual(len(bases), 0)
+            self.assertEqual(bases, [])
+
+    def test_load_from_file_csv(self):
+        """Test loading non-existant file"""
+        obj = Base.load_from_file_csv()
+        self.assertEqual(obj, [])

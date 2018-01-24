@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Unittests for Rectangle class"""
+import csv
 import io
 import json
 import sys
@@ -321,8 +322,8 @@ class TestRectangleClass(unittest.TestCase):
         self.assertEqual(json.loads(json_dict_str),
                          json.loads(Base.to_json_string([attrs])))
 
-    def test_save_to_file(self):
-        """Test inhertied save_to_file()"""
+    def test_save_to_file_rect(self):
+        """Test inherted save_to_file()"""
         r1 = Rectangle(10, 7, 2, 8)
         r2 = Rectangle(2, 4)
         Rectangle.save_to_file([r1, r2])
@@ -355,12 +356,32 @@ class TestRectangleClass(unittest.TestCase):
         r1 = Rectangle(10, 7, 2, 8)
         r2 = Rectangle(2, 4)
         list_rect_input = [r1, r2]
-        Rectangle.save_to_file(list_rectangles_input)
+        Rectangle.save_to_file(list_rect_input)
         list_rect_output = Rectangle.load_from_file()
         self.assertEqual(len(list_rect_output), len(list_rect_input))
         self.assertEqual(r1.__str__(), list_rect_output[0].__str__())
         self.assertEqual(r2.__str__(), list_rect_output[1].__str__())
 
-#    def test_save_to_file_csv(self):
+    def test_save_to_file_csv_rect(self):
+        """Test inherited save_to_file_csv()"""
+        r1 = Rectangle(10, 7, 2, 8)
+        r2 = Rectangle(2, 4)
+        rects = [r1, r2]
+        Rectangle.save_to_file_csv(rects)
+        with open("Rectangle.csv", "r") as f:
+            reader = csv.DictReader(f)
+            for row, rect in zip(reader, rects):
+                for k, v in row.items():
+                    row[k] = int(v)
+                self.assertEqual(row, rect.to_dictionary())
 
-#    def test_load_from_file_csv(self):
+    def test_load_from_file_csv_rect(self):
+        """Test inherited load_from_file()"""
+        r1 = Rectangle(10, 7, 2, 8)
+        r2 = Rectangle(2, 4)
+        list_rect_input = [r1, r2]
+        Rectangle.save_to_file_csv(list_rect_input)
+        list_rect_output = Rectangle.load_from_file_csv()
+        self.assertEqual(len(list_rect_output), len(list_rect_input))
+        for ri, ro in zip(list_rect_input, list_rect_output):
+            self.assertEqual(ri.__str__(), ro.__str__())

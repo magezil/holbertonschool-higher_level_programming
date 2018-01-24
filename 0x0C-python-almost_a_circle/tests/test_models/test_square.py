@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Unittests for Square class"""
+import csv
 import io
 import json
 import sys
@@ -161,7 +162,7 @@ class TestSquareClass(unittest.TestCase):
         self.assertNotEqual(s1, s2)
 
     def test_load_from_file(self):
-        """Test inherited_load_from_file()"""
+        """Test inherited load_from_file()"""
         s1 = Square(5)
         s2 = Square(7, 9, 1)
         list_squares_input = [s1, s2]
@@ -170,3 +171,27 @@ class TestSquareClass(unittest.TestCase):
         self.assertEqual(len(list_squares_output), len(list_squares_input))
         self.assertEqual(s1.__str__(), list_squares_output[0].__str__())
         self.assertEqual(s2.__str__(), list_squares_output[1].__str__())
+
+    def test_save_to_file_csv_sq(self):
+        """Test save_to_file_csv()"""
+        s1 = Square(10, 7, 2, 8)
+        s2 = Square(2)
+        sqs = [s1, s2]
+        Square.save_to_file_csv(sqs)
+        with open("Square.csv", "r") as f:
+            reader = csv.DictReader(f)
+            for row, sq in zip(reader, sqs):
+                for k, v in row.items():
+                    row[k] = int(v)
+                self.assertEqual(row, sq.to_dictionary())
+
+    def test_load_from_file_csv_sq(self):
+        """Test inherited load_from_file_csv()"""
+        s1 = Square(5)
+        s2 = Square(7, 9, 1)
+        list_squares_input = [s1, s2]
+        Square.save_to_file_csv(list_squares_input)
+        list_squares_output = Square.load_from_file_csv()
+        self.assertEqual(len(list_squares_output), len(list_squares_input))
+        for si, so in zip(list_squares_input, list_squares_output):
+            self.assertEqual(si.__str__(), so.__str__())
