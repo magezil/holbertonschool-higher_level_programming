@@ -209,7 +209,7 @@ class TestSquareClass(unittest.TestCase):
             self.assertEqual(len(sqs), 0)
             self.assertEqual(sqs, [])
 
-    def test_save_to_file_empty_sq(self):
+    def test_save_to_file_emptysq(self):
         """Test save_to_file() with empty list"""
         Square.save_to_file([])
         with open("Square.json", "r") as f:
