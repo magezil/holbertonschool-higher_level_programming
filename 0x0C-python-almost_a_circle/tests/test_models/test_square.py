@@ -201,7 +201,7 @@ class TestSquareClass(unittest.TestCase):
             self.assertEqual(len(sqs), 1)
             self.assertEqual(sq.to_dictionary(), sqs[0])
 
-    def test_save_to_file_none_sq(self):
+    def test_save_to_file_nonesq(self):
         """Test save_to_file() with None"""
         Square.save_to_file(None)
         with open("Square.json", "r") as f:
