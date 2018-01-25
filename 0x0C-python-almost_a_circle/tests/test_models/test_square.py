@@ -39,10 +39,49 @@ class TestSquareClass(unittest.TestCase):
         self.assertEqual(s1.y, 9)
         self.assertEqual(s1.id, 21)
 
+    def test_init_size0(self):
+        """Initialize with size 0"""
+        with self.assertRaises(ValueError) as ve:
+            Square(0)
+            self.assertEqual(str(ve.exception), "width must be >= 0")
+
     def test_init_toomany(self):
         """Initialize with too many arguments"""
         with self.assertRaises(TypeError):
             s1 = Square(7, 8, 9, 21, 22)
+
+    def test_init_type(self):
+        """Initialize with string value"""
+        with self.assertRaises(TypeError):
+            Square("1")
+
+    def test_init_type_sizex(self):
+        """Initialize with string value"""
+        with self.assertRaises(TypeError):
+            Square(2, "1")
+
+    def test_init_type_sizexy(self):
+        """Initialize with string value"""
+        with self.assertRaises(TypeError):
+            Square(3, 2, "1")
+
+    def test_init_negative(self):
+        """Initialize with a negative value"""
+        with self.assertRaises(ValueError) as ve:
+            Square(-1)
+            self.assertEqual(str(ve.exception), "width must be >= 0")
+
+    def test_init_negative_sizex(self):
+        """Initialize with a negative value"""
+        with self.assertRaises(ValueError) as ve:
+            Square(2, -1)
+            self.assertEqual(str(ve.exception), "width must be >= 0")
+
+    def test_init_negative_sizexy(self):
+        """Initialize with a negative value"""
+        with self.assertRaises(ValueError) as ve:
+            Square(3, 2, -1)
+            self.assertEqual(str(ve.exception), "width must be >= 0")
 
     def test_str_size(self):
         """Test __str__() function, intialize with size only"""
