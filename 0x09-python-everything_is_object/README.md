@@ -221,3 +221,19 @@ a is b
 >>> a += [4]
 >>> id(a)
 ```
+
+### 103-line1.txt, 103-line2.txt
+* These files list how many int objects are created by each line of the following script
+```python
+a = 1
+b = 1
+```
+
+### 104-line1.txt, 104-line2.txt, 104-line3.txt, 104-line4.txt, 104-line5.txt
+```python
+a = 1024
+b = 1024
+del a
+del b
+c = 1024
+```
