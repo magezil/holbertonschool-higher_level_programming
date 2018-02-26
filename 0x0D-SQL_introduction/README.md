@@ -53,3 +53,6 @@
 
 ### 13-change_class.sql
 * Removes all records with `score <= 5` in `second_table`
+### 14-average.sql
+* Computes the average score of all records in second_table
+
