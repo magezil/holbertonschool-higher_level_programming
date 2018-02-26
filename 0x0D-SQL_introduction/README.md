@@ -18,3 +18,6 @@
   * `id`: INT
   * `name`: VARCHAR(256)
 
+### 5-full_table.sql
+* Prints full description of table `first_table` from the given database
+
