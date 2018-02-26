@@ -13,3 +13,8 @@
 ### 3-list_tables.sql
 * Show tables of a database in MySQL server
 
+### 4-first_table.sql
+* Create new table `first_table` in current database
+  * `id`: INT
+  * `name`: VARCHAR(256)
+
