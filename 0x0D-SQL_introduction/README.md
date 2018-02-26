@@ -25,3 +25,7 @@
 ### 6-list_values.sql
 * Lists all rows of table `first_table` from given database
 
+### 7-insert_value.sql
+* Insert a new row into table `first_table`
+  * `id=89`, `name='Holberton School'`
+
