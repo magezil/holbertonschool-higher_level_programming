@@ -56,3 +56,6 @@
 ### 14-average.sql
 * Computes the average score of all records in second_table
 
+### 15-groups.sql
+* List number of records with the same score in second_table
+
