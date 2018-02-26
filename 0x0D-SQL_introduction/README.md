@@ -20,4 +20,8 @@
 
 ### 5-full_table.sql
 * Prints full description of table `first_table` from the given database
+  * Does not use `DESCRIBE` or `EXPLAIN`
+
+### 6-list_values.sql
+* Lists all rows of table `first_table` from given database
 
