@@ -48,3 +48,6 @@
 ### 11-best_score.sql
 * Lists all records with `score >= 10` in `second_table`
 
+### 12-no_cheating.sql
+* Update score of name='Bob' to 10
+
