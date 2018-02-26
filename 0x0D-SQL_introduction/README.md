@@ -51,3 +51,5 @@
 ### 12-no_cheating.sql
 * Update score of name='Bob' to 10
 
+### 13-change_class.sql
+* Removes all records with `score <= 5` in `second_table`
