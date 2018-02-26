@@ -29,3 +29,6 @@
 * Insert a new row into table `first_table`
   * `id=89`, `name='Holberton School'`
 
+### 8-count_89.sql
+* Count the number of records with `id=89` in table `first_table` of given database
+
