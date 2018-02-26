@@ -59,3 +59,6 @@
 ### 15-groups.sql
 * List number of records with the same score in second_table
 
+### 16-no_link.sql
+* List all records of second_table that have a name value
+
