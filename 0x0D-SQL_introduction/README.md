@@ -33,7 +33,7 @@
 * Count the number of records with `id=89` in table `first_table` of given database
 
 ### 9-full_creation.sql
-* Create a new table in given database and adds multiple rows
+* Create a new table `second_table` in given database and adds multiple rows
   * `id`: INT
   * `name`: VARCHAR(256)
   * `score`: INT
@@ -42,3 +42,6 @@
   * id = 2, name = “Alex”, score = 3
   * id = 3, name = “Bob”, score = 14
   * id = 4, name = “George”, score = 8
+### 10-top_score.sql
+* Lists all records of `second_table`
+
