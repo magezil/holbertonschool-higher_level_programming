@@ -43,5 +43,8 @@
   * id = 3, name = “Bob”, score = 14
   * id = 4, name = “George”, score = 8
 ### 10-top_score.sql
-* Lists all records of `second_table`
+* Lists all records of `second_table` in descending order based on `score`
+
+### 11-best_score.sql
+* Lists all records with `score >= 10` in `second_table`
 
