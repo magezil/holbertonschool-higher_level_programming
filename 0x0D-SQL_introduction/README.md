@@ -62,3 +62,6 @@
 ### 16-no_link.sql
 * List all records of second_table that have a name value
 
+### 100-move_to_utf8.sql
+* Converts database to UTF8
+
