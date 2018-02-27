@@ -68,3 +68,9 @@
 ### 101-avg_temperatures.sql
 * Displays the average temperature by city
 
+### 102-top_city.sql
+* Display the top 3 cities with the highest temperature during July and August
+
+### 103-max_state.sql
+* Display max temperature of each state
+
