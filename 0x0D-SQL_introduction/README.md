@@ -65,3 +65,6 @@
 ### 100-move_to_utf8.sql
 * Converts database to UTF8
 
+### 101-avg_temperatures.sql
+* Displays the average temperature by city
+
