@@ -7,3 +7,6 @@
 ### 1-create_user.sql
 * Creates new user user_0d_1
 
+### 2-create_read_user.sql
+* Create new database and new user
+
