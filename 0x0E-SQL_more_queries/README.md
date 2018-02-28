@@ -17,5 +17,8 @@
 * Create new table `id_not_null` with `id` (default 1) and `name`
 
 ### unique_id
-* Create table unique_id with id (default value 1 and unique) and name
+* Create table `unique_id` with `id` (default 1) and `name`
+
+### 6-states.sql
+* Create database hbtn_0d_usa with table states
 
