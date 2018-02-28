@@ -10,3 +10,6 @@
 ### 2-create_read_user.sql
 * Create new database and new user
 
+### 3-force_name.sql
+* Create table force_name with id and name
+
