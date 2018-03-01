@@ -37,3 +37,9 @@
 ### 11-genre_id_all_shows.sql
 * Lists all shows within database
 
+### 12-no_genre.sql
+* List only movies without a genre
+
+### 13-count_shows_by_genre.sql
+* List all genres and the number of shows linked to each
+
