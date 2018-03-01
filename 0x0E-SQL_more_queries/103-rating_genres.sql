@@ -1,0 +1,1 @@
+-- Lists all genres by their rating
