@@ -43,3 +43,6 @@
 ### 13-count_shows_by_genre.sql
 * List all genres and the number of shows linked to each
 
+### 14-my_genres.sql
+* List all genres of show Dexter
+
