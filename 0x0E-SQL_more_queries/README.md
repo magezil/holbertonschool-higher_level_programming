@@ -58,3 +58,9 @@
 ### 101-not_a_comedy.sql
 * List all shows without genre comedy
 
+### 102-rating_shows.sql
+* Lists all shows by their rating
+
+### 103-rating_genres.sql
+* Lists all genres by their rating
+
