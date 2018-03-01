@@ -34,3 +34,6 @@
 ### 10-genre_id_by_show.sql
 * Lists all shows that have at least one genre linked
 
+### 11-genre_id_all_shows.sql
+* Lists all shows within database
+
