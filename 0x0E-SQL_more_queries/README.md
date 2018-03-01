@@ -46,3 +46,6 @@
 ### 14-my_genres.sql
 * List all genres of show Dexter
 
+### 15-comedy_only.sql
+* List all shows with the genre comedy
+
