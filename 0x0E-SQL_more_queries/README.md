@@ -20,5 +20,8 @@
 * Create table `unique_id` with `id` (default 1) and `name`
 
 ### 6-states.sql
-* Create database hbtn_0d_usa with table states
+* Create database hbtn_0d_usa with table states (`id` and `name`)
+
+### 7-cities.sql
+* Create a database hbtn_0d_usa and table cities (`id`, `state_id`, `name`)
 
