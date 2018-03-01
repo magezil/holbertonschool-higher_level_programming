@@ -49,3 +49,6 @@
 ### 15-comedy_only.sql
 * List all shows with the genre comedy
 
+### 16-shows_by_genre.sql
+* List all shows and genres linked to shows
+
