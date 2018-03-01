@@ -31,3 +31,6 @@
 ### 9-cities_by_state_join.sql
 * Lists all cities in database with cities id, name, and state name
 
+### 10-genre_id_by_show.sql
+* Lists all shows that have at least one genre linked
+
