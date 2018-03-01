@@ -52,3 +52,6 @@
 ### 16-shows_by_genre.sql
 * List all shows and genres linked to shows
 
+### 100-not_my_genres.sql
+* 
+
