@@ -28,3 +28,6 @@
 ### 8-cities_of_california_subquery.sql
 * Lists all cities of California in the database `hbtn_0d_usa`
 
+### 9-cities_by_state_join.sql
+* Lists all cities in database with cities id, name, and state name
+
