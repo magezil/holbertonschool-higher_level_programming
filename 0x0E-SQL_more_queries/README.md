@@ -20,8 +20,11 @@
 * Create table `unique_id` with `id` (default 1) and `name`
 
 ### 6-states.sql
-* Create database hbtn_0d_usa with table states (`id` and `name`)
+* Create database `hbtn_0d_usa` with table states (`id` and `name`)
 
 ### 7-cities.sql
-* Create a database hbtn_0d_usa and table cities (`id`, `state_id`, `name`)
+* Create a database `hbtn_0d_usa` and table cities (`id`, `state_id`, `name`)
+
+### 8-cities_of_california_subquery.sql
+* Lists all cities of California in the database `hbtn_0d_usa`
 
