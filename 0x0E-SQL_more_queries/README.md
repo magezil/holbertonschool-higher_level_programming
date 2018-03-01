@@ -53,5 +53,8 @@
 * List all shows and genres linked to shows
 
 ### 100-not_my_genres.sql
-* 
+* List all genres not linked to tv_show Dexter
+
+### 101-not_a_comedy.sql
+* List all shows without genre comedy
 
