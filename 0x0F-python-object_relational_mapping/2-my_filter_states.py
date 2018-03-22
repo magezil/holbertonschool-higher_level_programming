@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""Script takes in an argument and displays all values in states table that match argument
-Takes three arguments:
+"""Script displays all values in states table that match given argument
+Takes four arguments:
     mysql username
     mysql password
     database name
+    name to match
 Connects to default host (localhost) and port (3306)
 """
 
