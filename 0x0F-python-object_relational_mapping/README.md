@@ -10,10 +10,19 @@
 * Connects to default host (localhost) and port (3306)
 
 ### 1-filter_states.py
-* Script lists all states with a name starting with N from database hbtn_0e_0_usa
+* Script lists all `states` with a `name` starting with `N` from database `hbtn_0e_0_usa`
 * Takes three arguments:
   * mysql username
   * mysql password
   * database name
+* Connects to default host (localhost) and port (3306)
+
+### 2-my_filter_states.py
+* Script takes in an argument and displays all values in `states` table that match argument
+* Takes four arguments:
+  * mysql username
+  * mysql password
+  * database name
+  * state name searched
 * Connects to default host (localhost) and port (3306)
 
