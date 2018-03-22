@@ -4,6 +4,7 @@ Takes three arguments:
     mysql username
     mysql password
     database name
+Connects to default host (localhost) and port (3306)
 """
 
 if __name__ == "__main__":
