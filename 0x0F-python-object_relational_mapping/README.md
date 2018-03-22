@@ -35,3 +35,11 @@
   * state name to search (to be sanitized) 
 * Connects to default host (localhost) and port (3306)
 
+### 4-cities_by_state.py
+* Script lists all cities from database
+* Takes three arguments:
+  * mysql username
+  * mysql password
+  * database name
+* Connects to default host (localhost) and port (3306)
+
