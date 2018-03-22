@@ -27,7 +27,7 @@
 * Connects to default host (localhost) and port (3306)
 
 ### 3-my_safe_filter_states.py
-* Script takes in arguments, sanitizes it, and siplay all states with matching name
+* Script takes in arguments, sanitizes it, and display all states with matching name
 * Takes four arguments:
   * mysql username
   * mysql password
@@ -37,6 +37,14 @@
 
 ### 4-cities_by_state.py
 * Script lists all cities from database
+* Takes three arguments:
+  * mysql username
+  * mysql password
+  * database name
+* Connects to default host (localhost) and port (3306)
+
+### 5-filter_cities.py
+* Script takes state name as an argument and lists all cities of given state
 * Takes three arguments:
   * mysql username
   * mysql password
