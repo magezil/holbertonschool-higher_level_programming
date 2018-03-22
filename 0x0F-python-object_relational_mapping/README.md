@@ -23,6 +23,15 @@
   * mysql username
   * mysql password
   * database name
-  * state name searched
+  * state name to search
+* Connects to default host (localhost) and port (3306)
+
+### 3-my_safe_filter_states.py
+* Script takes in arguments, sanitizes it, and siplay all states with matching name
+* Takes four arguments:
+  * mysql username
+  * mysql password
+  * database name
+  * state name to search (to be sanitized) 
 * Connects to default host (localhost) and port (3306)
 
