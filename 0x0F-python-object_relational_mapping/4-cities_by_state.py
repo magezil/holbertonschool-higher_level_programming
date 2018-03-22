@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-"""Script lists all cities from database"""
+"""Script lists all cities from database
+Takes three arguments:
+    mysql username
+    mysql password
+    database name
+Connects to default host (localhost) and port (3306)
+"""
 
 if __name__ == "__main__":
     from sys import argv
