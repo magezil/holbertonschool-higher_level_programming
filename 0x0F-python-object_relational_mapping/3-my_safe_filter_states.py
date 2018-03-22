@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script takes in arguments, sanitizes it, and siplay all states with matching name
+"""Script takes in arguments, sanitizes them, and display state
 Takes four arguments:
     mysql username
     mysql password
