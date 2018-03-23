@@ -23,8 +23,5 @@ if __name__ == "__main__":
         if row[4] == param[0]:
             cities.append(row[2])
     print(', '.join(cities))
- #   for row in rows[:-1]:
- #       print("{}".format(row[0]), end=', ')
- #   print("{}".format(rows[-1][0]))
     c.close()
     db.close()
