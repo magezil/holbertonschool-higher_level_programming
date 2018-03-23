@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """File contains class definition of City"""
 from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy.orm import relationship
 from relationship_state import Base, State
 
 
-class City(State):
+class City(Base):
     """City class inherits from State class
 
     Links to MySQL table 'cities'
@@ -15,6 +16,7 @@ class City(State):
         state_id: column of integer, can't be NULL, foreign key (states.id)
     """
     __tablename__ = 'cities'
-    id = Column(Integer, primary_key=True, nullable=False)
-    name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
+    id = Column(Integer, primary_key=True)
+    name = Column(String(128))
+    state_id = Column(Integer, ForeignKey('states.id'))
+    state = relationship("State", back_populates="cities")
