@@ -87,7 +87,7 @@ Takes three arguments:
 * Print `Nothing` if table is empty
 
 ### 10-model_state_my_get.py
-* Script prints State object with the name passed as argument
+* Script prints `State` object with the name passed as argument
 * Takes three arguments:
   * mysql username
   * mysql password
@@ -96,7 +96,7 @@ Takes three arguments:
 * Print `Not found` if not found
 
 ### 11-model_state_insert.py
-* Adds State object to database
+* Adds `State` object to database
 * Takes three arguments
   * mysql username
   * mysql password
@@ -104,10 +104,18 @@ Takes three arguments:
 * Connects to host localhost and default port (3306)
 
 ### 12-model_state_update_id_2.py
-* Change name of State object with id=2 in database
-Takes three arguments
-    mysql username
-    mysql password
-    database name
-Connects to host localhost and default port (3306)
+* Change name of `State` object with `id=2` to `New Mexico` in database
+* Takes three arguments
+  * mysql username
+  * mysql password
+  * database name
+* Connects to host localhost and default port (3306)
+
+### 13-model_state_delete_a.py
+* Script deletes all State objects with a name containing the letter a in database
+* Takes three arguments
+  * mysql username
+  * mysql password
+  * database name
+* Connects to host localhost and default port (3306)
 
