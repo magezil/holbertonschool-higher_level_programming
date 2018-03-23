@@ -19,6 +19,7 @@ if __name__ == "__main__":
     instances = session.query(State).filter(State.name.like('%a%')).all()
     if instances:
         for instance in instances:
-            print("{}: {}".format(instance.id, instance.name))
+            if instance.name.find('a') > -1:
+                print("{}: {}".format(instance.id, instance.name))
     else:
         print("Nothing")
