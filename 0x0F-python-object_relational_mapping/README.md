@@ -75,3 +75,6 @@ Takes three arguments
   * mysql password
   * database name
 * Connects to default host (localhost) and port (3306)
+### 9-model_state_filter_a.py
+* Script lists all objects that contain the letter a
+
