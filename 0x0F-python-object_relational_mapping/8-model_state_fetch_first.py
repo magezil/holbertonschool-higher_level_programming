@@ -16,8 +16,8 @@ if __name__ == "__main__":
         argv[1], argv[2], argv[3]), pool_pre_ping=True)
     session = Session(bind=engine)
     Base.metadata.create_all(engine)
-    instance = session.query(State).filter(State.id == 1)
+    instance = session.query(State).filter(State.id == 1).first()
     if (instance):
-        print("{}: {}".format(instance.first().id, instance.first().name))
+        print("{}: {}".format(instance.id, instance.name))
     else:
         print("Nothing")
