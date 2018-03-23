@@ -5,7 +5,7 @@ from sqlalchemy.orm import relationship
 from model_state import Base, State
 
 
-class City(State):
+class City(Base):
     """City class inherits from State class
 
     Links to MySQL table 'cities'
@@ -20,6 +20,6 @@ class City(State):
     name = Column(String(128), nullable=False)
     state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
 
-    state = relationship("State", back_populates="cities")
+    state = relationship("State", foreign_keys="states.id", back_populates="cities")
 
 State.cities = relationship("City", order_by=City.id, back_populates="state")
