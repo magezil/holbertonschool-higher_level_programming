@@ -51,3 +51,19 @@
   * database name
 * Connects to default host (localhost) and port (3306)
 
+### model_state.py
+* File contains class `State` and instance `Base = declarative_base()`
+* `State` class:
+  * inherits from `Base`
+  * links to MySQL table `states`
+  * class attributes:
+    * `id` - represents a column of auto-generated, unique integer, can't be NULL, and is primary key
+    * `name` - represents a column of string with max 128 characters, can't be NULL
+
+### 7-model_state_fetch_all.py
+* Script lists all State objects from given database
+Takes three arguments:
+  * mysql username
+  * mysql password
+  * database name
+
