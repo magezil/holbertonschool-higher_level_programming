@@ -19,6 +19,7 @@ if __name__ == "__main__":
     instances = session.query(State).filter(State.name == argv[4]).all()
     if instances:
         for instance in instances:
-            print("{}: {}".format(instance.id, instance.name))
+            if instance.name == argv[4]:
+                print("{}".format(instance.id))
     else:
         print("Not found")
