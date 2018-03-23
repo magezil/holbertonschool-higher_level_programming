@@ -103,3 +103,11 @@ Takes three arguments:
   * database name
 * Connects to host localhost and default port (3306)
 
+### 12-model_state_update_id_2.py
+* Change name of State object with id=2 in database
+Takes three arguments
+    mysql username
+    mysql password
+    database name
+Connects to host localhost and default port (3306)
+
