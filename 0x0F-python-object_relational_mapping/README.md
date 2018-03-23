@@ -130,3 +130,9 @@ Connects to host localhost and default port (3306)
 ### model_city.py
 * File contains class definition of City
 
+### relationship_city.py, relationship_state.py, 100-relationship_states_cities.py
+* Script creates State California and City San Francisco in database
+* `relationship_city.py`, `relationship_state.py`
+  * describe relationship between `State` and `City`
+  * configure auto deletion of cities if state is deleted (orphaned)
+
