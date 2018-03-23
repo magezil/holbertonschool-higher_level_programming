@@ -66,7 +66,7 @@ Takes three arguments:
   * mysql username
   * mysql password
   * database name
-* Connects to default host (localhost) and port (3306)
+* Connects to host localhost and default port (3306)
 
 ### 8-model_state_fetch_first.py
 * Script prints first `State` object from database
@@ -74,7 +74,7 @@ Takes three arguments:
   * mysql username
   * mysql password
   * database name
-* Connects to default host (localhost) and port (3306)
+* Connects to host localhost and default port (3306)
 * Print `Nothing` if table is empty
 
 ### 9-model_state_filter_a.py
@@ -83,7 +83,7 @@ Takes three arguments:
   * mysql username
   * mysql password
   * database name
-* Connects to default host (localhost) and port (3306)
+* Connects to host localhost and default port (3306)
 * Print `Nothing` if table is empty
 
 ### 10-model_state_my_get.py
@@ -92,6 +92,14 @@ Takes three arguments:
   * mysql username
   * mysql password
   * database name
-* Connects to default host (localhost) and port (3306)
+* Connects to host localhost and default port (3306)
 * Print `Not found` if not found
+
+### 11-model_state_insert.py
+* Adds State object to database
+* Takes three arguments
+  * mysql username
+  * mysql password
+  * database name
+* Connects to host localhost and default port (3306)
 
