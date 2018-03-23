@@ -22,5 +22,3 @@ if __name__ == "__main__":
         for instance in instances:
             if 'a' in instance.name:
                 print("{}: {}".format(instance.id, instance.name))
-    else:
-        print("Nothing")
