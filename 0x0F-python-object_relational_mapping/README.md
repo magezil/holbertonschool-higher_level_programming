@@ -70,11 +70,28 @@ Takes three arguments:
 
 ### 8-model_state_fetch_first.py
 * Script prints first `State` object from database
-Takes three arguments
+* Takes three arguments:
   * mysql username
   * mysql password
   * database name
 * Connects to default host (localhost) and port (3306)
+* Print `Nothing` if table is empty
+
 ### 9-model_state_filter_a.py
-* Script lists all objects that contain the letter a
+* Script lists all `State` objects that contain the letter `a`
+* Takes three arguments:
+  * mysql username
+  * mysql password
+  * database name
+* Connects to default host (localhost) and port (3306)
+* Print `Nothing` if table is empty
+
+### 10-model_state_my_get.py
+* Script prints State object with the name passed as argument
+* Takes three arguments:
+  * mysql username
+  * mysql password
+  * database name
+* Connects to default host (localhost) and port (3306)
+* Print `Not found` if not found
 
