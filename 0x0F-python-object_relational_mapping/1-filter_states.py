@@ -16,6 +16,7 @@ if __name__ == "__main__":
             ORDER BY states.id ASC""")
     rows = c.fetchall()
     for row in rows:
-        print(row)
+        if row[1][0] == 'N':
+            print(row)
     c.close()
     db.close()
