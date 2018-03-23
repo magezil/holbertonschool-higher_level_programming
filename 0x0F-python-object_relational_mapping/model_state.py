@@ -16,5 +16,5 @@ class State(Base):
         name: column of string with max 128 characters, can't be NULL
     """
     __tablename__ = 'states'
-    id = Column(Integer, primary_key=True)
-    name = Column(String(128))
+    id = Column(Integer, primary_key=True, nullable=False)
+    name = Column(String(128), nullable=False)

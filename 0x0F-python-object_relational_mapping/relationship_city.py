@@ -15,6 +15,6 @@ class City(State):
         state_id: column of integer, can't be NULL, foreign key (states.id)
     """
     __tablename__ = 'cities'
-    id = Column(Integer, primary_key=True)
-    cityname = Column(String(128))
-    state_id = Column(Integer, ForeignKey('states.id'))
+    id = Column(Integer, primary_key=True, nullable=False)
+    name = Column(String(128), nullable=False)
+    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
