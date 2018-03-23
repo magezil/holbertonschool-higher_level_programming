@@ -13,13 +13,18 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
     c = db.cursor()
     param = (argv[4], )
-    c.execute("SELECT cities.name FROM cities\
+    c.execute("SELECT * FROM cities\
             INNER JOIN states ON cities.state_id = states.id\
             WHERE states.name = %s\
             ORDER BY cities.id ASC", param)
     rows = c.fetchall()
-    for row in rows[:-1]:
-        print("{}".format(row[0]), end=', ')
-    print("{}".format(rows[-1][0]))
+    cities = []
+    for row in rows:
+        if row[4] == param[0]:
+            cities.append(row[2])
+    print(', '.join(cities))
+ #   for row in rows[:-1]:
+ #       print("{}".format(row[0]), end=', ')
+ #   print("{}".format(rows[-1][0]))
     c.close()
     db.close()
