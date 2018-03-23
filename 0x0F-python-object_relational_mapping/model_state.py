@@ -7,7 +7,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    """State class inherits from Base and inherits from Base
+    """State class inherits from Base
 
     Links to MySQL table 'states'
 
