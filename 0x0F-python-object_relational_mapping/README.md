@@ -119,3 +119,14 @@ Takes three arguments:
   * database name
 * Connects to host localhost and default port (3306)
 
+### 14-model_city_fetch_by_state.py
+* Script prints all City objects
+Takes three arguments
+    mysql username
+    mysql password
+    database name
+Connects to host localhost and default port (3306)
+
+### model_city.py
+* File contains class definition of City
+
