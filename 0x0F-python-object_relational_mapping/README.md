@@ -66,4 +66,12 @@ Takes three arguments:
   * mysql username
   * mysql password
   * database name
+* Connects to default host (localhost) and port (3306)
 
+### 8-model_state_fetch_first.py
+* Script prints first `State` object from database
+Takes three arguments
+  * mysql username
+  * mysql password
+  * database name
+* Connects to default host (localhost) and port (3306)
