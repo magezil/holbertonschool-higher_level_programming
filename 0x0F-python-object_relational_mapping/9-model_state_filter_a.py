@@ -20,7 +20,7 @@ if __name__ == "__main__":
         .order_by(State.id).all()
     if instances:
         for instance in instances:
-            if instance.name.find('a') > -1:
+            if 'a' in instance.name:
                 print("{}: {}".format(instance.id, instance.name))
     else:
         print("Nothing")
