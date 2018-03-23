@@ -20,6 +20,6 @@ class City(Base):
     name = Column(String(128), nullable=False)
     state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
 
-    state = relationship("State", foreign_keys="states.id", back_populates="cities")
+    state = relationship("State", back_populates="cities")
 
 State.cities = relationship("City", order_by=City.id, back_populates="state")
