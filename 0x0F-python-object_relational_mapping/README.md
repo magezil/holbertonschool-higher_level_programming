@@ -136,3 +136,6 @@ Connects to host localhost and default port (3306)
   * describe relationship between `State` and `City`
   * configure auto deletion of cities if state is deleted (orphaned)
 
+### 101-relationship_states_cities_list.py
+* Lists all State objects and corresponding City objects
+
