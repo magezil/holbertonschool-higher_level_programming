@@ -139,3 +139,6 @@ Connects to host localhost and default port (3306)
 ### 101-relationship_states_cities_list.py
 * Lists all State objects and corresponding City objects
 
+### 102-relationship_cities_states_list.py
+* Lists all City objects with respective State
+
