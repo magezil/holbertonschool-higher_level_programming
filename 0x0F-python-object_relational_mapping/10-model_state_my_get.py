@@ -23,3 +23,4 @@ if __name__ == "__main__":
                 print("{}".format(instance.id))
     else:
         print("Not found")
+    session.close()

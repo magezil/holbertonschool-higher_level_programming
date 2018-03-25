@@ -21,3 +21,4 @@ if __name__ == "__main__":
         for instance in instances:
             session.delete(instance)
         session.commit()
+    session.close()

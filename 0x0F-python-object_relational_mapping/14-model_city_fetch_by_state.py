@@ -21,3 +21,4 @@ if __name__ == "__main__":
         State.id == City.state_id).order_by(City.id).all())
     for i in result:
         print("{}: ({:d}) {}".format(i[0], i[1], i[2]))
+    session.close()

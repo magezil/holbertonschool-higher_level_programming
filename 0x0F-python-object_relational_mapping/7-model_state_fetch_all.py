@@ -18,3 +18,4 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     for instance in session.query(State).order_by(State.id):
         print("{}: {}".format(instance.id, instance.name))
+    session.close()
