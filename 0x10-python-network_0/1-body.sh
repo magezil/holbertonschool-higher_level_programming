@@ -1,3 +1,3 @@
 #!/bin/bash
 # Display body of response of GET request
-curl -sL "$2"
+curl -sLf "$2"
