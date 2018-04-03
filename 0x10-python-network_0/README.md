@@ -16,3 +16,6 @@
 ### 4-header.sh
 * Sends GET request with header variable X-HolbertonSchool-User_Id=98
 
+### 5-post_params.sh
+* Send POST request with variable email="hr@holbertonschool.com" and subject="I will always be here for PLD"
+
