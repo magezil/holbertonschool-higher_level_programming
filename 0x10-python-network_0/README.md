@@ -13,3 +13,6 @@
 ### 3-methods.sh
 * Displays all HTTP methods server can accept
 
+### 4-header.sh
+* Sends GET request with header variable X-HolbertonSchool-User_Id=98
+
