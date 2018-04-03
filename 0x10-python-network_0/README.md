@@ -10,3 +10,6 @@
 ### 2-delete.sh
 * Sends DELETE request to URL and display response
 
+### 3-methods.sh
+* Displays all HTTP methods server can accept
+
