@@ -18,6 +18,7 @@ def find_peak(list_of_integers):
         return list_of_integers[0]
     return peak_rec(list_of_integers, 0, size)
 
+
 def peak_rec(integers, start, end):
     """
         Recursively finds peak in unsorted list of integers
