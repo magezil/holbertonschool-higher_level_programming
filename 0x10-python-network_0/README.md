@@ -24,3 +24,6 @@
 ### 100-status_code.sh
 * Use curl options to get status code of response
 
+### 101-post_json.sh
+* Sends a JSON POST request to URL and displays the body of the response
+
