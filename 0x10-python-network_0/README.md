@@ -21,3 +21,6 @@
 
 ### 6-peak.py
 * Defines function `find_peak` - Finds peak in unsorted list of integers
+### 100-status_code.sh
+* Use curl options to get status code of response
+
