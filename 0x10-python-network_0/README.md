@@ -27,3 +27,6 @@
 ### 101-post_json.sh
 * Sends a JSON `POST` request to URL and displays the body of the response
 
+### 102-catch_me.sh
+* Get the server to respond with `You got me!` by sending a request with curl to `0:5000/catch_me`
+
