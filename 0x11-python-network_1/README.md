@@ -16,3 +16,6 @@
 ### 4-hbtn_status.py
 * Use package requests to fetch https://intranet.hbtn.io/status
 
+### 5-hbtn_header.py
+* Sends request to given URL and display value of X-Request-Id in header
+
