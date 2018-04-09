@@ -4,6 +4,7 @@
 """
 import urllib.request
 import urllib.parse
+from urllib.error import URLError, HTTPError
 from sys import argv
 if __name__ == "__main__":
     req = urllib.request.Request(argv[1])
@@ -11,7 +12,4 @@ if __name__ == "__main__":
         with urllib.request.urlopen(req) as response:
             print(response.read().decode(encoding="utf-8"))
     except URLError as e:
-        if hasattr(e, 'reason'):
-            print("Error code: {}", e.reason)
-        elif hasattr(e, 'code'):
-            print("Error code: {}", e.code)
+        print("Error code: {}".format(e.code))
