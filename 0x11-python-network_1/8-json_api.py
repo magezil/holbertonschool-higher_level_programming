@@ -12,5 +12,7 @@ if __name__ == "__main__":
         print("Not a valid JSON")
     if 'id' in r and 'name' in r:
         print("[{}] {}".format(r['id'], r['name']))
-    else:
+    elif len(r) == 0:
         print("No result")
+    else:
+        print("Not a valid JSON")
