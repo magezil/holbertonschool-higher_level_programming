@@ -28,3 +28,6 @@
 ### 8-json_api.py
 * Takes a letter and post request to http://0.0.0.0:5000/search_user
 
+### 9-starwars.py
+* Send search request to [Star Wars API](https://swapi.co/documentation#search) with given string
+
