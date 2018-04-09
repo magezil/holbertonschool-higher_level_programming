@@ -22,3 +22,9 @@
 ### 6-post_email.py
 * Sends a POST request to passed URL with email as parameter and displays body of response
 
+### 7-error_code.py
+* Send request to given URL and display body of response
+
+### 8-json_api.py
+* Takes a letter and post request to http://0.0.0.0:5000/search_user
+
