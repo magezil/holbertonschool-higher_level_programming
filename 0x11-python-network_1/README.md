@@ -13,3 +13,6 @@
 ### 3-error_code.py
 * Print error code in utf-8
 
+### 4-hbtn_status.py
+* Use package requests to fetch https://intranet.hbtn.io/status
+
