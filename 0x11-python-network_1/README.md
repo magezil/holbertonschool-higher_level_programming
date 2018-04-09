@@ -19,3 +19,6 @@
 ### 5-hbtn_header.py
 * Sends request to given URL and display value of X-Request-Id in header
 
+### 6-post_email.py
+* Sends a POST request to passed URL with email as parameter and displays body of response
+
