@@ -10,3 +10,6 @@
 ### 2-post_email.py
 * Sends a POST request to the URL passed into script
 
+### 3-error_code.py
+* Print error code in utf-8
+
