@@ -37,3 +37,6 @@
 ### 100-github_commits.py
 * Takes two arguments (repository name, owner name) to send a request to the Github API to get 10 commits
 
+### 101-starwars.py
+* Search for people in Star Wars API and account for pagination
+
