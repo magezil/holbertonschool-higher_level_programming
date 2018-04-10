@@ -10,6 +10,10 @@ if __name__ == "__main__":
     owner = argv[2]
     r = requests.get('https://api.github.com/repos/{}/{}/commits'
                      .format(owner, repo)).json()
-    for line in r[:10]:
+    count = 0
+    for line in r:
         print("{}: {}".format(line.get("sha"),
               line.get("commit").get("author").get("name")))
+        count += 1
+        if count == 10:
+            break
