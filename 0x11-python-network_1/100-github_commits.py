@@ -9,6 +9,6 @@ repo = argv[1]
 owner = argv[2]
 r = requests.get('https://api.github.com/repos/{}/{}/commits'
                  .format(owner, repo)).json()
-for i in range(10):
-    print("{}: {}".format(r[i].get("sha"),
-          r[i].get("commit").get("author").get("name")))
+for line in r[:10]:
+    print("{}: {}".format(line.get("sha"),
+          line.get("commit").get("author").get("name")))
