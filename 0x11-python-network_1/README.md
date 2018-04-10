@@ -34,3 +34,6 @@
 ### 10-my_github.py
 * Script takes Github credentials (username and password) and uses the [Github API](https://developer.github.com/v3/users/#get-the-authenticated-user) to display id
 
+### 100-github_commits.py
+* Takes two arguments (repository name, owner name) to send a request to the Github API to get 10 commits
+
