@@ -7,9 +7,9 @@ import requests
 from base64 import b64encode
 from sys import argv
 if __name__ == "__main__":
-    key = b64encode(argv[1].encode())
-    secret = b64encode(argv[2].encode())
-    token = b64encode("{}:{}".format(key, secret).encode())
+    key = argv[1]
+    secret = argv[2]
+    token = b64encode("{}:{}".format(key, secret).encode()).decode('utf-8')
     search = argv[3]
     headers = {'Authorization': "Basic {}".format(token),
                'Content-Type':
@@ -20,8 +20,8 @@ if __name__ == "__main__":
     access = r.get("access_token")
     r = requests.get('https://api.twitter.com/1.1/search/tweets.json',
                      headers={"Authorization": "Bearer {}".format(access)},
-                     params={"q": search, "count": 5})
-    for post in r.json().get("statuses"):
+                     params={"q": search, "count": 5}).json()
+    for post in r.get("statuses"):
         print("[{}] {} by {}".format(post.get("id"),
                                      post.get("text"),
                                      post.get("user").get("name")))
