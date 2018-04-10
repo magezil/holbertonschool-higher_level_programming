@@ -43,3 +43,7 @@
 ### 102-starwars.py
 * Build on previous search to include list of films person is in
 
+### 103-search_twitter.py
+* Send a search request to the Twitter API for given string
+  * Format: [<Tweet ID>] <Tweet text> by <Tweet owner name>
+
