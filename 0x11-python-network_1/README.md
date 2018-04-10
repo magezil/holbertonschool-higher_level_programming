@@ -31,3 +31,6 @@
 ### 9-starwars.py
 * Send search request to [Star Wars API](https://swapi.co/documentation#search) with given string
 
+### 10-my_github.py
+* Script takes Github credentials (username and password) and uses the [Github API](https://developer.github.com/v3/users/#get-the-authenticated-user) to display id
+
