@@ -40,3 +40,6 @@
 ### 101-starwars.py
 * Search for people in Star Wars API and account for pagination
 
+### 102-starwars.py
+* Build on previous search to include list of films person is in
+
