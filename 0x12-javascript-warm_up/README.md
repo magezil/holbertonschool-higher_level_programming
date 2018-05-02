@@ -62,3 +62,6 @@ Javascript is amazing
 ### 100-let_me_const.js
 * Change the value of \`myVar\` = 333
 
+### 101-call_me_moby.js
+* Function executes a function `x` times
+
