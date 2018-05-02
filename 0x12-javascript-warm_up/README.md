@@ -24,10 +24,10 @@ Javascript is amazing
 * Prints the value of the first argument or `No argument` if none passed
 
 ### 4-concat.js
-* Create a sentence by concatentating two arguments with ' is ' in between
+* Create a sentence by concatentating two arguments with ` is ` in between
 
 ### 5-to_integer.js
-* Print argument as an integer or 'Not a number' if cannot be converted
+* Print argument as an integer or `Not a number` if cannot be converted
 
 ### 6-multi_languages_loop.js
 * Print the following three lines using an array of strings and a loop
@@ -36,4 +36,8 @@ C is fun
 Python is cool
 Javascript is amazing
 ```
+
+### 7-multi_c.js
+* Print `C is fun` the number of times given as an argument
+  * If argument cannot be converted to an integer, print `Missing number of occurrences`
 
