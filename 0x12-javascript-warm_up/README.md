@@ -23,3 +23,6 @@ Javascript is amazing
 ### 3-value_argument.js
 * Prints the value of the first argument or `No argument` if none passed
 
+### 4-concat.js
+* Concatentate two arguments with 'is' in between
+
