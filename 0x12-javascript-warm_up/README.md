@@ -12,3 +12,9 @@ Python is cool
 Javascript is amazing
 ```
 
+### 2-arguments.js
+* Prints a message depending on number of arguments passed
+  * `No argument` if 0
+  * `Argument found` if 1
+ `Arguments found` if more than 1
+
