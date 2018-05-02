@@ -24,5 +24,8 @@ Javascript is amazing
 * Prints the value of the first argument or `No argument` if none passed
 
 ### 4-concat.js
-* Concatentate two arguments with 'is' in between
+* Create a sentence by concatentating two arguments with ' is ' in between
+
+### 5-to_integer.js
+* Print argument as an integer or 'Not a number' if cannot be converted
 
