@@ -47,3 +47,6 @@ Javascript is amazing
 ### 9-add.js
 * Add two numbers given as an argument
 
+### 10-factorial.js
+* Computes the factorial of a given number
+
