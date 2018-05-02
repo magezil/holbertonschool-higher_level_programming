@@ -56,3 +56,6 @@ Javascript is amazing
 ### 12-object.js
 * Update the value of `myObject` to `89`
 
+### 13-add.js
+* Function returns addition of 2 integers
+
