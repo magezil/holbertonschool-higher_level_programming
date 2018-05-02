@@ -29,3 +29,11 @@ Javascript is amazing
 ### 5-to_integer.js
 * Print argument as an integer or 'Not a number' if cannot be converted
 
+### 6-multi_languages_loop.js
+* Print the following three lines using an array of strings and a loop
+```
+C is fun
+Python is cool
+Javascript is amazing
+```
+
