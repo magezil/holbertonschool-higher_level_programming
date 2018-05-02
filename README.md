@@ -25,3 +25,4 @@ More Classes and Objects
 0x0F-python-object_relational_mapping - Object-relational mapping  
 0x10-python-network_0 - Python Networking #0  
 0x11-python-network_1 - Python Network #1  
+0x12-javascript-warm_up - Intro to Javascript  
