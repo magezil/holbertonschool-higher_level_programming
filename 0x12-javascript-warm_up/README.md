@@ -65,3 +65,6 @@ Javascript is amazing
 ### 101-call_me_moby.js
 * Function executes a function `x` times
 
+### 102-add_me_maybe.js
+* Function increments and calls another function
+
