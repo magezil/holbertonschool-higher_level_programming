@@ -20,3 +20,6 @@ Javascript is amazing
   * `Argument found` if 1
   * `Arguments found` if more than 1
 
+### 3-value_argument.js
+* Prints the value of the first argument or `No argument` if none passed
+
