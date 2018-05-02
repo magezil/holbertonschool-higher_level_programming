@@ -53,3 +53,6 @@ Javascript is amazing
 ### 11-second_biggest.js
 * Find the second largest integer
 
+### 12-object.js
+* Update the value of `myObject` to `89`
+
