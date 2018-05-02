@@ -50,3 +50,6 @@ Javascript is amazing
 ### 10-factorial.js
 * Computes the factorial of a given number
 
+### 11-second_biggest.js
+* Find the second largest integer
+
