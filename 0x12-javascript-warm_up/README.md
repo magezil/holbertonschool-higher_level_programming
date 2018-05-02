@@ -59,3 +59,6 @@ Javascript is amazing
 ### 13-add.js
 * Function returns addition of 2 integers
 
+### 100-let_me_const.js
+* Change the value of \`myVar\` = 333
+
