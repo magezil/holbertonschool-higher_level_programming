@@ -41,3 +41,6 @@ Javascript is amazing
 * Print `C is fun` the number of times given as an argument
   * If argument cannot be converted to an integer, print `Missing number of occurrences`
 
+### 8-square.js
+* Prints a square of a given argument size
+
