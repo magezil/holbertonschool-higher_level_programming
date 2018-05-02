@@ -69,5 +69,5 @@ Javascript is amazing
 * Function increments and calls another function
 
 ### 103-object_fct.js
-* Add function `incr` to increment the integer `value`
+* Add function `incr` to object that increment the object's integer `value`
 
