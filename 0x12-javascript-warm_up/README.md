@@ -44,3 +44,6 @@ Javascript is amazing
 ### 8-square.js
 * Prints a square of a given argument size
 
+### 9-add.js
+* Add two numbers given as an argument
+
