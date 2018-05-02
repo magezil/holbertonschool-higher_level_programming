@@ -68,3 +68,6 @@ Javascript is amazing
 ### 102-add_me_maybe.js
 * Function increments and calls another function
 
+### 103-object_fct.js
+* Add function `incr` to increment the integer `value`
+
