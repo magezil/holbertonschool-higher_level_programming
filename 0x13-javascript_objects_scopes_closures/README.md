@@ -24,3 +24,6 @@
 ### 6-square.js
 * Adds the method `charPrint(c)` that prints the square using character `c`
 
+### 7-occurrences.js
+* Count number of occurances in given list
+
