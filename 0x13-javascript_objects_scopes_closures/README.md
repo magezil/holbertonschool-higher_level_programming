@@ -18,3 +18,6 @@
 ### 4-rectangle.js
 * Add methods `rotate` to exchange `width` and `height` and `double` which doubles the `width` and `height`
 
+### 5-square.js
+* Create `Square` that inherits from `Rectangle`
+
