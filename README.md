@@ -26,3 +26,4 @@ More Classes and Objects
 0x10-python-network_0 - Python Networking #0  
 0x11-python-network_1 - Python Network #1  
 0x12-javascript-warm_up - Intro to Javascript  
+[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
