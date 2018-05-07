@@ -1,6 +1,11 @@
 # 0x13-javascript_objects_scopes_closures
 
+[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
+
 ## Javascript Objects, Scopes, and Closures
 ### 0-rectangle.js
 * Empty class `Rectangle` defines a rectangle using `class` notation
+
+### 1-rectangle.js
+* Add a constructor to `Rectangle` that takes two arguments `w` and `h` and initialize these values to `width` and `height` respectively
 
