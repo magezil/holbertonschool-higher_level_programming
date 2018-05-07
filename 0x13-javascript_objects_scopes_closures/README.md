@@ -13,11 +13,14 @@
 * Check values given to constructor - create empty object if either argument is 0 or negative
 
 ### 3-rectangle.js
-* Prints rectanglue using character `X`
+* Method `print()` prints rectangle using character `X`
 
 ### 4-rectangle.js
-* Add methods `rotate` to exchange `width` and `height` and `double` which doubles the `width` and `height`
+* Add methods `rotate()` to exchange `width` and `height` and `double()` which doubles the `width` and `height`
 
 ### 5-square.js
 * Create `Square` that inherits from `Rectangle`
+
+### 6-square.js
+* Adds the method `charPrint(c)` that prints the square using character `c`
 
