@@ -26,4 +26,9 @@
 
 ### 7-occurrences.js
 * Count number of occurances in given list
+* Prototype: `exports.nbOccurences = function (list, searchElement)`
+
+### 8-esrever.js
+* Function returns reversed version of list
+* Prototype: `exports.esrever = function (list)	
 
