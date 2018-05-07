@@ -12,3 +12,6 @@
 ### 2-rectangle.js
 * Check values given to constructor - create empty object if either argument is 0 or negative
 
+### 3-rectangle.js
+* Prints rectanglue using character `X`
+
