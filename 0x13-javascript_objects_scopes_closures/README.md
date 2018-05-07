@@ -9,3 +9,6 @@
 ### 1-rectangle.js
 * Add a constructor to `Rectangle` that takes two arguments `w` and `h` and initialize these values to `width` and `height` respectively
 
+### 2-rectangle.js
+* Check values given to constructor - create empty object if either argument is 0 or negative
+
