@@ -15,3 +15,6 @@
 ### 3-rectangle.js
 * Prints rectanglue using character `X`
 
+### 4-rectangle.js
+* Add methods `rotate` to exchange `width` and `height` and `double` which doubles the `width` and `height`
+
