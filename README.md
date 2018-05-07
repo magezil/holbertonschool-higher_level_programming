@@ -27,3 +27,4 @@ More Classes and Objects
 0x11-python-network_1 - Python Network #1  
 0x12-javascript-warm_up - Intro to Javascript  
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
+0x13-javascript_objects_scopes_closures - Javascript Objects, Scopes, and Closures  
