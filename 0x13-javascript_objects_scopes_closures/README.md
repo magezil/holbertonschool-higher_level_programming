@@ -32,3 +32,8 @@
 * Function returns reversed version of list
 * Prototype: `exports.esrever = function (list)	
 
+### 9-logme.js
+* Function prints number of arguments already printed and the new argument value
+  * Prototype: `exports.logMe = function (item)`
+  * Output format: `<number arguments already printed>: <current argument value>`
+
