@@ -8,7 +8,7 @@ request(url, function (err, response, body) {
     let results = JSON.parse(body).results;
     let count = 0;
     for (let res in results) {
-      let characters = results[res].characters;
+      let characters = results[res]['characters'];
       for (let c in characters) {
         if (characters[c] === 'https://swapi.co/api/people/18/') {
           count++;
