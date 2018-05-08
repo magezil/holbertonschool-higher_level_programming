@@ -16,3 +16,7 @@
   * Usage: `./2-statuscode.js url_to_request`
   * Output format: `code: <status code`
 
+### 3-starwars_title.js
+* Script prints Star Wars movie matching given episode number
+  * Usage: `./3-starwars_title.js number`
+
