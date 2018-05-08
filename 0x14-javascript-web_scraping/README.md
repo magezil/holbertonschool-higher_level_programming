@@ -29,3 +29,7 @@
   * Usage: `./5-request_store.js url file_name
 
 
+### 6-completed_tasks.js
+* Script computes number of tasks completed by user id
+  * Usage: `./6-completed_tasks.js https://jsonplaceholder.typicode.com/todos`
+
