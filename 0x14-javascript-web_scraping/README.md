@@ -24,3 +24,8 @@
 * Script prints the number of movies where the character 'Wedge Antilles' (ID 18) is present
   * Usage: `./4-starwars_count.js http://swapi.co/api/films`
 
+### 5-request_store.js
+* Script gets contents of a webpage and stores it in a file
+  * Usage: `./5-request_store.js url file_name
+
+
