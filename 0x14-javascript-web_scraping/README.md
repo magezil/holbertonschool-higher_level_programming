@@ -20,3 +20,7 @@
 * Script prints Star Wars movie matching given episode number
   * Usage: `./3-starwars_title.js number`
 
+### 4-starwars_count.js
+* Script prints the number of movies where the character 'Wedge Antilles' (ID 18) is present
+  * Usage: `./4-starwars_count.js http://swapi.co/api/films`
+
