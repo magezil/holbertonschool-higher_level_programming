@@ -30,10 +30,14 @@
 
 ### 8-esrever.js
 * Function returns reversed version of list
-* Prototype: `exports.esrever = function (list)	
+* Prototype: `exports.esrever = function (list)`
 
 ### 9-logme.js
 * Function prints number of arguments already printed and the new argument value
   * Prototype: `exports.logMe = function (item)`
   * Output format: `<number arguments already printed>: <current argument value>`
+
+### 10-converter.js
+* Convert number from base 10 to given base without creting any new variables
+  * Prototype: `exports.converter = function (base)`
 
