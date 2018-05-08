@@ -7,3 +7,7 @@
 * Read in `utf-8` and print the contents of a file
   * Usage: `./0-readme.js file_name`
 
+### 1-writeme.js
+* Function writes a string to a file
+  * Usage: `./1-writeme.js file_name text_to_write`
+
