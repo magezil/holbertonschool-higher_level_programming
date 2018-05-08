@@ -11,3 +11,8 @@
 * Function writes a string to a file
   * Usage: `./1-writeme.js file_name text_to_write`
 
+### 2-statuscode.js
+* Function displays the status code of a `GET` request
+  * Usage: `./2-statuscode.js url_to_request`
+  * Output format: `code: <status code`
+
