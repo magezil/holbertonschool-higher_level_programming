@@ -29,3 +29,4 @@ More Classes and Objects
 0x12-javascript-warm_up - Intro to Javascript  
 0x13-javascript_objects_scopes_closures - Javascript Objects, Scopes, and Closures  
 0x14-javascript-web_scraping - Javscript web-scraping  
+0x15-javascript-web_jquery - Javascript - Web JQuery  
