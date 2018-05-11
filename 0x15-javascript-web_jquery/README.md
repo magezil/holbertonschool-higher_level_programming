@@ -25,3 +25,6 @@
 ### 7-script.js
 * Fetch `name` of URL `https://swapi.co/api/people/5/?format=json` and insert into \`DIV#character\` tag
 
+### 8-script.js
+* Fetch all movies `title` from URL `https://swapi.co/api/films/?format=json` and list in HTML tag `UL#list_movies`
+
