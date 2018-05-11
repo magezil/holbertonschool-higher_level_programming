@@ -20,5 +20,8 @@
 * Add a `LI` element when user clicks on `DIV#add_item`
 
 ### 6-script.js
-* Update \`HEADER\` tag to "New Header!!!" when the user clicks on \`DIV#update_header\`
+* Update `HEADER` tag to "New Header!!!" when the user clicks on `DIV#update_header`
+
+### 7-script.js
+* Fetch `name` of URL `https://swapi.co/api/people/5/?format=json` and insert into \`DIV#character\` tag
 
