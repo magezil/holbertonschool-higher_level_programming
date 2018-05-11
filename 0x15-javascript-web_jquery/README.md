@@ -28,3 +28,6 @@
 ### 8-script.js
 * Fetch all movies `title` from URL `https://swapi.co/api/films/?format=json` and list in HTML tag `UL#list_movies`
 
+### 9-script.js
+* Fetch the San Francisco wind speed from URL `https://query.yahooapis.com/v1/public/yql?q=select%20wind%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22San%20Francisco%2C%20CA%22)&format=json` and print it in `DIV#sf_wind_speed
+
