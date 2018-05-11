@@ -10,3 +10,6 @@
 ### 2-script.js
 * Updates text color of HTML `HEADER` tag to red `#FF0000` when tag `DIV#red_header` is clicked
 
+### 3-script.js
+* Add red class to `HEADER` tag when user clicks on `DIV#red_header`
+
