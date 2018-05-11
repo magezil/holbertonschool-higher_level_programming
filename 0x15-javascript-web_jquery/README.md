@@ -13,3 +13,9 @@
 ### 3-script.js
 * Add red class to `HEADER` tag when user clicks on `DIV#red_header`
 
+### 4-script.js
+* Toggle class of HTML `HEADER` tag between classes `red` and `green` when `DIV#toggle_header` is clicked
+
+### 5-script.js
+* Add a `LI` element when user clicks on `DIV#add_item`
+
